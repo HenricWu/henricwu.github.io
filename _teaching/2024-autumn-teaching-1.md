@@ -5,8 +5,8 @@ type: "Postgraduate course"
 permalink: /teaching/postgraduate-shipping-data
 ---
 
-### Course: Maritime Big Data Technologies （航运大数据技术）  
-**Institution**: Shanghai Maritime University （上海海事大学）  
+### Course: Maritime Big Data Technologies 
+**Institution**: Shanghai Maritime University
 **Level**: Graduate (Master's level)
 
 As part of my teaching experience at Shanghai Maritime University, I lectured on the postgraduate course **"Maritime Big Data Technologies"**, which focuses on the theoretical foundation and applied methods of data-driven technologies in the modern shipping industry. The course emphasizes the integration of **computer vision techniques and AIS (Automatic Identification System) data**, aiming to provide students with a solid understanding of how multi-source data fusion can enhance maritime situational awareness and decision-making.
