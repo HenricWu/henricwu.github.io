@@ -7,13 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my personal academic website powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted via [GitHub pages](https://pages.github.com). This site showcases my research, publications, and academic activities.
+Welcome to my personal academic website. This site showcases my research, publications, and academic activities. Please feel free to contact me via email: **whycoding@163.com**.
 
 ## About Me
 
-I am **Haoyang Wu**, a Ph.D. student at the **School of Artificial Intelligence and Automation**, **Huazhong University of Science and Technology (HUST)**. My advisor is Prof. [Shoudong Han](http://faculty.hust.edu.cn/hanshoudong).
+I am **Haoyang Wu**, currently a Ph.D. student in Control Science and Engineering at the **School of Artificial Intelligence and Automation**, **Huazhong University of Science and Technology (HUST)**. My advisor is Prof. [Shoudong Han](http://faculty.hust.edu.cn/hanshoudong).
 
-My research focuses primarily on:
+I earned my Bachelor of Engineering degree in Computer Science and Technology from Southwest Petroleum University in 2022 and my Master of Engineering degree in Traffic Information Engineering and Control from Shanghai Maritime University in 2025. During my master's studies, I was awarded the National Scholarship and recognized as an Outstanding Graduate of Shanghai. Additionally, I hold one national invention patent and eight computer software copyrights.
+
+My research interests primarily focus on:
 
 - **Multi-source remote sensing information processing**
 - **Object detection and tracking in complex scenarios**
