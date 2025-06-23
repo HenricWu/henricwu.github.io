@@ -4,7 +4,7 @@ collection: teaching
 type: "Postgraduate course"
 permalink: /teaching/postgraduate-shipping-data
 venue: "Shanghai Maritime University, School of Information Engineering"
-date: 2023-03-01
+date: 2024-12-01
 location: "Shanghai, China"
 ---
 
