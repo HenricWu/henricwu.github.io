@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my personal academic website. This site showcases my research, publications, and academic activities. Please feel free to contact me via email: **whycoding@163.com**.
+Welcome to my personal academic website. This site showcases my research, publications and academic activities. Please feel free to contact me via email: **whycoding@163.com**.
 
 ## About Me
 
-I am **Haoyang Wu**, currently a Ph.D. student in Control Science and Engineering at the **School of Artificial Intelligence and Automation**, **Huazhong University of Science and Technology (HUST)**. My advisor is Prof. [Shoudong Han](http://faculty.hust.edu.cn/hanshoudong).
+I am **Haoyang Wu**, currently a Ph.D. student in Control Science and Engineering at the **School of Artificial Intelligence and Automation**, **Huazhong University of Science and Technology (HUST)**, affiliated with the ISE-CV research group. My advisor is Prof. [Shoudong Han](http://faculty.hust.edu.cn/hanshoudong).
 
 I earned my Bachelor of Engineering degree in Computer Science and Technology from Southwest Petroleum University in 2022 and my Master of Engineering degree in Traffic Information Engineering and Control from Shanghai Maritime University in 2025. During my master's studies, I was awarded the National Scholarship and recognized as an Outstanding Graduate of Shanghai. Additionally, I hold one national invention patent and eight computer software copyrights.
 
@@ -19,6 +19,7 @@ My research interests primarily focus on:
 
 - **Multi-source remote sensing information processing**
 - **Object detection and tracking in complex scenarios**
+
 
 ## Publications
 
@@ -28,7 +29,7 @@ During my master's study, I published and submitted research articles in prestig
    - *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (IEEE J-STARS)*, JCR Q1, IF=5.5. **(Published)**
 
 2. **Spatiotemporal Deep Learning Model for Typhoon-Induced Vessel Delay Prediction Based on Satellite Remote Sensing and AIS Data**
-   - *IEEE Transactions on Geoscience and Remote Sensing (IEEE TGRS)*, JCR Q1, IF=8.8. **(Under Review)**
+   - *IEEE Transactions on Geoscience and Remote Sensing (IEEE TGRS)*, JCR Q1, IF=8.8. **(Major Revision)**
 
 These publications address remote sensing imagery and AIS data fusion problems, specifically focusing on static geometric correction and dynamic spatiotemporal prediction in intelligent maritime transportation scenarios.
 
@@ -52,6 +53,6 @@ During my master's period, I participated in industrial-academic cooperation pro
 
 ## Contact
 
-Feel free to reach me via phone: **13079132345**.
+Feel free to reach me via e-mail: **whycoding@163.com**.
 
-Thank you for visiting my academic homepage!
+Thank you for visiting my homepage!
