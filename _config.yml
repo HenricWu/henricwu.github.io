@@ -24,11 +24,11 @@ author:
   # Biographic information
   avatar           : "Google参会照.PNG"
   name             : "Haoyang Wu"
-  pronouns         : # example: "her"  
+  pronouns         : # example: "his"  
   bio              : "Ph.D. student at the School of Artificial Intelligence and Automation, Huazhong University of Science and Technology (HUST)"
   location         : "Wuhan, China"
-  employer         : "Huazhong University of Science and Technology"
-  uri              : # URL
+  # employer         : "Huazhong University of Science and Technology"
+  # uri              : # URL
   email            : "whycoding@163.com" 
 
   # Academic websites
@@ -51,8 +51,8 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
+  # bluesky          : "bsky.app" # Replace this with you Bluesky username
+  # facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
@@ -350,6 +350,6 @@ tag_archive:
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
-  clippings: all
+  clippings: 全部
   ignore:
     envs: development
