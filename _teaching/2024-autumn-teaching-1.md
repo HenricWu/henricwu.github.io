@@ -3,23 +3,25 @@ title: "Postgraduate Teaching Experience"
 collection: teaching
 type: "Postgraduate course"
 permalink: /teaching/postgraduate-shipping-data
+venue: "Shanghai Maritime University, School of Information Engineering"
+date: 2023-03-01
+location: "Shanghai, China"
 ---
 
 ### Course: Maritime Big Data Technologies 
 **Institution**: Shanghai Maritime University
 **Level**: Graduate (Master's level)
 
-As part of my teaching experience at Shanghai Maritime University, I lectured on the postgraduate course **"Maritime Big Data Technologies"**, which focuses on the theoretical foundation and applied methods of data-driven technologies in the modern shipping industry. The course emphasizes the integration of **computer vision techniques and AIS (Automatic Identification System) data**, aiming to provide students with a solid understanding of how multi-source data fusion can enhance maritime situational awareness and decision-making.
+In the spring semester of 2023, I served as the **course lecturer** for the postgraduate course **"Maritime Big Data Technologies"** at **Shanghai Maritime University**. The course focused on the theoretical foundation and applied methods of data-driven technologies in the modern shipping industry. It emphasized the integration of **computer vision techniques and AIS (Automatic Identification System) data**, aiming to provide students with a solid understanding of how multi-source data fusion can enhance maritime situational awareness and decision-making.
 
-Key teaching contents included:
+### Key Responsibilities
 
-- **Introduction to Maritime Big Data**: Characteristics, sources, challenges, and opportunities in the context of intelligent shipping.
-- **AIS System Fundamentals**: Structure, information types (static, dynamic, voyage), and limitations.
-- **Remote Sensing in Maritime Applications**: Use of optical satellite imagery for vessel monitoring.
-- **Computer Vision in Shipping**: Object detection and tracking methods (e.g., YOLO, Deep SORT), with applications in port and river scenarios.
-- **Fusion of AIS and Visual Data**: Strategies for temporal and spatial alignment, feature-level and decision-level fusion, error modeling, and real-world case studies.
-- **Applications in Inland River Traffic and Coastal Surveillance**: Use of data fusion for ship localization, trajectory prediction, and abnormal behavior detection.
+- Delivering lectures on **maritime data characteristics, AIS structure**, and **remote sensing imagery**.
+- Introducing students to **object detection algorithms** such as YOLO and Deep SORT in maritime environments.
+- Demonstrating methods for **temporal-spatial alignment and fusion** of AIS and vision data.
+- Guiding **hands-on case analysis projects** using real-world datasets from inland river and coastal surveillance.
+- Discussing advanced applications such as **GeoAISNet** for remote sensing correction and vessel behavior modeling.
 
-In this course, I guided students through practical case analyses using real-world datasets from inland river and coastal shipping scenarios. The course incorporated discussions on cutting-edge research such as AIS-guided deep learning models, including **GeoAISNet**, and their applications in remote sensing image correction and maritime monitoring.
+### Learning Outcomes
 
-This teaching experience not only deepened students' technical competencies in maritime AI applications but also fostered interdisciplinary thinking across transportation engineering, remote sensing, and machine learning.
+Through this course, students developed the ability to apply machine learning and vision techniques in shipping scenarios, particularly in the context of **remote sensing–AIS fusion**, enabling improved vessel tracking, anomaly detection, and maritime safety analytics. The course also fostered interdisciplinary thinking across **transportation engineering, geospatial computing**, and **AI-driven perception systems**.
