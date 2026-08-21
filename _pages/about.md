@@ -29,7 +29,7 @@ My current doctoral research is centered on **multi-object tracking as the main 
 
 My research trajectory spans maritime remote sensing, AIS-guided geolocation correction, complex-scenario object detection and tracking, and multimodal 3D scene reasoning. During my master's study, I focused on multi-source remote sensing information processing and visual-AIS data fusion. During my doctoral study, my research has gradually shifted toward ambiguity-aware multi-object tracking, continuous visual perception, and multimodal reasoning for intelligent agents.
 
-1. **AIS Data-Guided Geolocation Correction Method for Low-Orbit Satellite Remote Sensing Imagery**
+1. [**AIS Data-Guided Geolocation Correction Method for Low-Orbit Satellite Remote Sensing Imagery**](/publication/2024-09-30-ais-geolocation-correction)
    - *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (IEEE J-STARS)*, vol. 17, pp. 18703–18726, 2024. **(Published, First Author)**
 
 2. **Spatiotemporal Deep Learning Model for Typhoon-Induced Vessel Delay Prediction Based on Satellite Remote Sensing and AIS Data**
