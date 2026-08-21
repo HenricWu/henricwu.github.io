@@ -38,8 +38,8 @@ My research trajectory spans maritime remote sensing, AIS-guided geolocation cor
 3. **One conference paper under review on ambiguity-aware multi-object tracking**
    - *Conference paper under review*. **(Submitted, First Author)**
 
-4. **Query-Driven Evidence Retrieval for Efficient 3D Question Answering**
-   - *IEEE Access*. **(Submitted, Second Author and Corresponding Author)**
+4. [**Query-Driven Evidence Retrieval for Efficient 3D Question Answering**](/publication/2026-05-04-query-driven-evidence-retrieval-3d-qa)
+   - *IEEE Access*. **(Published, Second Author and Corresponding Author)**
 
 These works collectively reflect my research evolution from remote sensing image correction and maritime spatiotemporal prediction to ambiguity-aware multi-object tracking and efficient multimodal reasoning. My doctoral research will continue to focus on multi-object tracking as the methodological core, while progressively extending toward persistent perception, multimodal memory, local planning, and embodied intelligence.
 
