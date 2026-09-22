@@ -1,4 +1,8 @@
 ---
+layout: academic-detail
+course_name: "Maritime Big Data Technologies"
+teaching_role: "Course lecturer"
+summary: "Graduate teaching on maritime data, computer vision, and the fusion of visual observations with AIS data."
 title: "Postgraduate Teaching Experience"
 collection: teaching
 type: "Postgraduate course"

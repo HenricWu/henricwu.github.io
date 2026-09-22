@@ -1,78 +1,58 @@
 ---
+layout: academic
 permalink: /
-title: "Haoyang Wu's Academic Homepage"
-author_profile: true
+title: "Haoyang Wu"
+home: true
+description: "Haoyang Wu is a Ph.D. student at HUST working on multi-object tracking, continuous visual perception, and multimodal reasoning."
 redirect_from:
   - /about/
   - /about.html
 ---
-
-Welcome to my personal academic website. This site showcases my research, publications, and academic activities. Please feel free to contact me via email: **haoyangwu@hust.edu.cn**.
-
-## About Me
-
-I am **Haoyang Wu**, currently a Ph.D. student in Control Science and Engineering at the **School of Artificial Intelligence and Automation**, **Huazhong University of Science and Technology (HUST)**, affiliated with the ISE-CV research group. My advisor is Prof. [Shoudong Han](http://faculty.hust.edu.cn/hanshoudong).
-
-I received my Bachelor of Engineering degree in Computer Science and Technology from Southwest Petroleum University in 2022 and my Master of Engineering degree in Traffic Information Engineering and Control from Shanghai Maritime University in 2025. During my master's studies, I was awarded the National Scholarship and recognized as an Outstanding Graduate of Shanghai. I also hold one national invention patent and eight computer software copyrights.
-
-My research interests primarily focus on:
-
-- **Multi-object tracking in complex and dynamic scenarios**
-- **Object detection and association under occlusion and ambiguity**
-- **Multi-source remote sensing information processing**
-- **Multimodal perception, memory, and reasoning for continuous visual intelligence**
-- **Embodied intelligence and vision-language-action systems**
-
-My current doctoral research is centered on **multi-object tracking as the main research thread**, especially identity-preserving association under complex interactions, occlusions, and long-term temporal ambiguity. Building upon this foundation, I am further exploring ambiguity-triggered local decision-making, multimodal memory updating, and forward-looking reasoning mechanisms for persistent perception systems. In the longer term, this research direction will be extended toward embodied intelligence, where visual tracking, multimodal scene understanding, agent memory, and vision-language-action reasoning are expected to form a unified framework for robust perception and decision-making in open environments.
-
-## Publications
-
-My research trajectory spans maritime remote sensing, AIS-guided geolocation correction, complex-scenario object detection and tracking, and multimodal 3D scene reasoning. During my master's study, I focused on multi-source remote sensing information processing and visual-AIS data fusion. During my doctoral study, my research has gradually shifted toward ambiguity-aware multi-object tracking, continuous visual perception, and multimodal reasoning for intelligent agents.
-
-1. [**AIS Data-Guided Geolocation Correction Method for Low-Orbit Satellite Remote Sensing Imagery**](/publication/2024-09-30-ais-geolocation-correction)
-   - *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (IEEE J-STARS)*, vol. 17, pp. 18703–18726, 2024. **(Published, First Author)**
-
-2. **Spatiotemporal Deep Learning Model for Typhoon-Induced Vessel Delay Prediction Based on Satellite Remote Sensing and AIS Data**
-   - *IEEE Transactions on Geoscience and Remote Sensing (IEEE TGRS)*. **(Minor Revision, First Author)**
-
-3. **One conference paper under review on ambiguity-aware multi-object tracking**
-   - *Conference paper under review*. **(Submitted, First Author)**
-
-4. [**Query-Driven Evidence Retrieval for Efficient 3D Question Answering**](/publication/2026-05-04-query-driven-evidence-retrieval-3d-qa)
-   - *IEEE Access*. **(Published, Second Author and Corresponding Author)**
-
-These works collectively reflect my research evolution from remote sensing image correction and maritime spatiotemporal prediction to ambiguity-aware multi-object tracking and efficient multimodal reasoning. My doctoral research will continue to focus on multi-object tracking as the methodological core, while progressively extending toward persistent perception, multimodal memory, local planning, and embodied intelligence.
-
-## Research Direction
-
-My current research aims to develop tracking-centered perception and reasoning systems for complex, long-horizon, and ambiguity-rich environments. Traditional multi-object tracking systems are often vulnerable to identity switches, fragmented trajectories, and association instability when facing occlusion, target interaction, disappearance-reappearance, and strong appearance similarity. My work investigates how to selectively introduce higher-level decision mechanisms only when local tracking ambiguity becomes critical, thereby improving identity consistency without sacrificing computational efficiency.
-
-One representative direction is **ambiguity-aware multi-object tracking**, where the tracking system does not treat all frames and targets equally. Instead, it identifies association-critical regions and activates local search, short-term hypothesis evaluation, or memory-assisted reasoning only when necessary. This principle is reflected in my MCTS-Track work, which introduces local Monte Carlo Tree Search into near-online multi-object tracking to refine ambiguous association decisions under bounded computation.
-
-Beyond conventional tracking, I am also interested in **continuous perception agents** that can maintain long-term scene understanding over video streams. In this setting, multi-object tracking is not merely a low-level perception module, but a structural basis for persistent identity representation, memory organization, and event-level reasoning. I plan to further explore ambiguity-triggered multimodal memory updating, local forward-looking decision-making, and world-model-inspired reasoning for long-term visual understanding.
-
-In the future, this research line will be extended toward **embodied intelligence and vision-language-action systems**. Multi-object tracking can provide stable object identities, temporal continuity, and interaction cues for embodied agents, while multimodal memory and language-guided reasoning can help agents understand dynamic environments, select informative observations, and make robust decisions under uncertainty.
-
-## Industrial-Academic Cooperation Projects
-
-During my master's period, I participated in industrial-academic cooperation projects directly serving maritime administrations:
-
-- **Visual Algorithm Engineer** at Shanghai hiFleet Technology Co., Ltd. (June 2023 - April 2025)
-
-1. **Jiujiang Inland River Intelligent Gate System** (Deployed and in use by Jiujiang Maritime Bureau)
-   - Constructed a real-time ship identification and tracking platform based on fixed-position cameras, serving inland river gate monitoring (June 2023 - Dec 2024)
-   - Technologies: YOLOv8, Deep SORT, AIS data fusion and matching.
-
-2. **Unmanned Intelligent Monitoring and Supplementary Blind-area System** (Deployed in Jiujiang and Jinshan Maritime Bureaus)
-   - Solved visual blind-spot recognition and dynamic airspace monitoring under extreme weather (June 2024 - Feb 2025)
-   - Technologies: Hybrid CNN-Transformer, multi-object detection and route planning, AIS trajectory scheduling.
-
-3. **hiFleet Multimodal Vision Fusion Identification Platform** (Under development on hiFleet platform)
-   - Integrated visual, AIS, and remote sensing data for unified sensing systems, achieving model-level integration (Sept 2024 - April 2025)
-   - Technologies: Spatiotemporal Attention, ESRGAN image enhancement, Transformer fusion models.
-
-## Contact
-
-Feel free to reach me via e-mail: **haoyangwu@hust.edu.cn**.
-
-Thank you for visiting my homepage!
+<section class="hero wrap" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow hero-eyebrow"><span class="small-rule"></span> Ph.D. student · HUST</p>
+    <h1 id="hero-title">Haoyang Wu<span class="blue">.</span></h1>
+    <p class="hero-statement">Towards continuous<br><em>visual intelligence.</em></p>
+    <p class="hero-description">I study how machines track, remember, and reason about a changing world — with a focus on multi-object tracking, persistent perception, and multimodal reasoning.</p>
+    <div class="hero-actions"><a class="button button-primary" href="#publications">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:haoyangwu@hust.edu.cn">Let's connect <span aria-hidden="true">↗</span></a></div>
+    <div class="profile-links" aria-label="Academic profiles"><a href="https://github.com/HenricWu" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span aria-hidden="true">/</span><a href="https://orcid.org/0009-0009-5828-7183" target="_blank" rel="noopener noreferrer">ORCID ↗</a><span aria-hidden="true">/</span><a href="mailto:haoyangwu@hust.edu.cn">Email ↗</a></div>
+  </div>
+  <figure class="portrait-block">
+    <div class="portrait-frame"><img src="{{ '/images/Google参会照.PNG' | relative_url }}" alt="Haoyang Wu at Google I/O Connect" width="1080" height="1080" fetchpriority="high"><span class="portrait-corner" aria-hidden="true">HW / 01</span></div>
+    <figcaption><span class="portrait-caption-title">Looking closer. Thinking further.</span><span>Wuhan, China <span aria-hidden="true">↗</span></span></figcaption>
+  </figure>
+</section>
+<div class="affiliation-strip wrap"><span class="affiliation-label">CURRENTLY AT</span><p>Huazhong University of Science and Technology<span>School of Artificial Intelligence and Automation · ISE-CV</span></p><span class="affiliation-mark" aria-hidden="true">HUST</span></div>
+<section class="section wrap about-section" id="about" aria-labelledby="about-title">
+  <div class="section-label"><span>01 / ABOUT</span><h2 id="about-title">A little<br>background.</h2></div>
+  <div class="about-content"><p class="lead">I’m a Ph.D. student in Control Science and Engineering at <a href="https://www.hust.edu.cn/" target="_blank" rel="noopener noreferrer">HUST</a>, advised by Prof. <a href="http://faculty.hust.edu.cn/hanshoudong" target="_blank" rel="noopener noreferrer">Shoudong Han</a>.</p><p>My work connects visual perception with temporal continuity: preserving object identities through occlusion and complex interactions, and exploring how multimodal memory and local reasoning can support long-term understanding.</p><p>Previously, I received my M.Eng. from Shanghai Maritime University in 2025 and my B.Eng. from Southwest Petroleum University in 2022. My earlier research focused on maritime remote sensing and visual–AIS data fusion.</p><div class="recognition"><span class="recognition-label">RECOGNITION</span><span>National Scholarship</span><span>Outstanding Graduate of Shanghai</span></div></div>
+</section>
+<section class="research-section" id="research" aria-labelledby="research-title">
+  <div class="wrap">
+    <div class="research-heading"><div><p class="eyebrow">02 / RESEARCH</p><h2 id="research-title">From seeing to <em>understanding.</em></h2></div><p>Tracking is the thread.<br>Continuous intelligence is the horizon.</p></div>
+    <div class="research-grid">
+      <article class="research-item"><div class="research-number">01 <span>CORE FOCUS</span></div><div class="research-diagram" aria-hidden="true"><svg viewBox="0 0 280 76"><path class="diagram-path" d="M5 54 C55 54 65 17 112 22 S191 63 275 21"/><path class="diagram-path muted" d="M5 22 C60 22 60 54 112 50 S190 10 275 54"/><rect class="diagram-box" x="19" y="36" width="28" height="30"/><rect class="diagram-box" x="109" y="9" width="28" height="30"/><rect class="diagram-box" x="233" y="19" width="28" height="30"/><path class="diagram-occlusion" d="M164 3 V72 M169 3 V72 M174 3 V72 M179 3 V72 M184 3 V72"/></svg></div><h3>Identity through ambiguity</h3><p>Multi-object tracking that preserves identity through occlusion, interactions, and disappearance–reappearance.</p><div class="research-tags">Object association <span>·</span> Bounded local search</div></article>
+      <article class="research-item"><div class="research-number">02 <span>ONGOING EXPLORATION</span></div><div class="research-diagram" aria-hidden="true"><svg viewBox="0 0 280 76"><path class="diagram-path muted" d="M22 38 H258 M70 14 V62 M140 14 V62 M210 14 V62"/><rect class="diagram-box" x="10" y="24" width="28" height="28"/><rect class="diagram-box" x="126" y="24" width="28" height="28"/><rect class="diagram-box" x="242" y="24" width="28" height="28"/><path class="diagram-path" d="M24 24 Q82 -12 140 24 M140 52 Q198 88 256 52"/><circle class="diagram-point" cx="140" cy="38" r="4"/></svg></div><h3>Perception with memory</h3><p>Persistent visual representations and query-driven evidence retrieval for efficient multimodal scene reasoning.</p><div class="research-tags">Multimodal memory <span>·</span> 3D understanding</div></article>
+      <article class="research-item"><div class="research-number">03 <span>FOUNDATIONS & APPLICATIONS</span></div><div class="research-diagram" aria-hidden="true"><svg viewBox="0 0 280 76"><path class="diagram-path muted" d="M22 12 L140 38 L258 12 M22 64 L140 38 L258 64"/><path class="diagram-path" d="M22 38 H258"/><circle class="diagram-ring" cx="140" cy="38" r="22"/><circle class="diagram-point" cx="22" cy="12" r="4"/><circle class="diagram-point" cx="22" cy="38" r="4"/><circle class="diagram-point" cx="22" cy="64" r="4"/><circle class="diagram-point" cx="140" cy="38" r="5"/><path class="diagram-box" d="M249 3 H267 V21 H249 Z M249 55 H267 V73 H249 Z"/></svg></div><h3>Connecting multiple sources</h3><p>Combining remote sensing, visual observations, and AIS data for maritime geolocation and situational awareness.</p><div class="research-tags">Remote sensing <span>·</span> Visual–AIS fusion</div></article>
+    </div>
+    <div class="research-outlook"><span>LOOKING AHEAD</span><p>Extending tracking-centered perception toward embodied intelligence and vision–language–action systems.</p><span aria-hidden="true">↗</span></div>
+  </div>
+</section>
+<section class="section wrap publications-section" id="publications" aria-labelledby="publications-title">
+  <div class="section-heading"><div><p class="eyebrow">03 / PUBLICATIONS</p><h2 id="publications-title">Research in print<span class="blue">.</span></h2></div><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a></div>
+  {% include academic/publications.html %}
+</section>
+<section class="section wrap experience-section" id="experience" aria-labelledby="experience-title">
+  <div class="section-label"><span>04 / EXPERIENCE</span><h2 id="experience-title">Learning.<br>Building.<br><em>Applying.</em></h2><p>From maritime perception<br>to continuous intelligence.</p></div>
+  <div class="experience-content"><h3 class="subsection-title">Education</h3><div class="timeline">
+    <article class="timeline-item"><div class="timeline-date">CURRENT</div><div><h4>Huazhong University of Science and Technology</h4><p>Ph.D. student · Control Science and Engineering</p><span>School of Artificial Intelligence and Automation · ISE-CV</span></div></article>
+    <article class="timeline-item"><div class="timeline-date">2025</div><div><h4>Shanghai Maritime University</h4><p>M.Eng. · Traffic Information Engineering and Control</p><span>National Scholarship · Outstanding Graduate of Shanghai</span></div></article>
+    <article class="timeline-item"><div class="timeline-date">2022</div><div><h4>Southwest Petroleum University</h4><p>B.Eng. · Computer Science and Technology</p></div></article>
+  </div><div class="industry-header"><h3 class="subsection-title">Research in practice</h3><span>JUN 2023 — APR 2025</span></div><h4 class="industry-role">Visual Algorithm Engineer <span>/ Shanghai hiFleet</span></h4><p class="industry-description">Industry–academic collaboration on maritime monitoring, combining computer vision with real-world vessel data.</p><div class="project-list">
+    <details><summary><span>Jiujiang Inland River Intelligent Gate System</span><span class="details-plus" aria-hidden="true">+</span></summary><div><p>Built a real-time vessel identification and tracking platform using fixed-position cameras. Deployed for the Jiujiang Maritime Bureau.</p><p class="project-tech">YOLOv8 · Deep SORT · AIS fusion<br>June 2023 – December 2024</p></div></details>
+    <details><summary><span>Intelligent monitoring beyond visual blind spots</span><span class="details-plus" aria-hidden="true">+</span></summary><div><p>Worked on blind-area recognition and dynamic airspace monitoring under extreme weather. Deployed in the Jiujiang and Jinshan Maritime Bureaus.</p><p class="project-tech">CNN–Transformer · Object detection · Route planning · AIS scheduling<br>June 2024 – February 2025</p></div></details>
+    <details><summary><span>hiFleet Multimodal Vision Fusion Platform</span><span class="details-plus" aria-hidden="true">+</span></summary><div><p>Integrated visual, AIS, and remote sensing data for unified sensing. The platform was under development during this project period.</p><p class="project-tech">Spatiotemporal attention · ESRGAN · Transformer fusion<br>September 2024 – April 2025</p></div></details>
+  </div><p class="ip-note">Additional outputs: one national invention patent and eight computer software copyrights.</p></div>
+</section>
+<section class="teaching-preview wrap" aria-labelledby="teaching-title"><div><p class="eyebrow">05 / TEACHING</p><h2 id="teaching-title">Sharing what I learn.</h2></div><div><p>From object-oriented programming to maritime big data — connecting foundations with practical problems.</p><a class="text-link" href="{{ '/teaching/' | relative_url }}">Teaching experience <span aria-hidden="true">↗</span></a></div></section>
+<section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">LET'S CONNECT</p><h2 id="contact-title">Good research starts<br>with a <em>conversation.</em></h2></div><div class="contact-info"><a class="contact-email" href="mailto:haoyangwu@hust.edu.cn">haoyangwu@hust.edu.cn <span aria-hidden="true">↗</span></a><p>School of Artificial Intelligence and Automation<br>Huazhong University of Science and Technology<br>Wuhan, China</p></div></section>

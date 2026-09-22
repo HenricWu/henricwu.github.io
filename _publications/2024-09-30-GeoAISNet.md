@@ -1,4 +1,20 @@
 ---
+image: /assets/academic/papers/geoaisnet.png
+image_alt: "Remote sensing image and AIS data fusion workflow from the published IEEE J-STARS paper."
+figure_label: "Fig. 2"
+figure_caption: "Remote sensing image and AIS data fusion workflow from the published IEEE J-STARS paper."
+figure_license: "CC BY-NC-ND 4.0"
+figure_license_url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+layout: academic-detail
+featured: true
+display_order: 2
+display_year: "2024"
+short_venue: "IEEE J-STARS"
+status: "Published"
+project_name: "GeoAISNet"
+author_line: "<strong>Haoyang Wu</strong>, Zishuo Huang, Qinyou Hu, Xin Ran, Qiang Mei"
+summary: "Combining AIS vessel data with satellite imagery to correct maritime geolocation errors without relying on ground control points."
+topic: "REMOTE SENSING"
 title: "AIS Data-Guided Geolocation Correction Method for Low-Orbit Satellite Remote Sensing Imagery"
 collection: publications
 category: manuscripts

@@ -1,0 +1,32 @@
+{% comment %}
+Adapted from yaoyao-liu/minimal-light, _includes/publications.md.
+Upstream commit: 1ea07f39518ac44644406380c83da6f89037c4fc (CC0-1.0).
+The thumbnail, title, author, venue and optional resource-link structure is retained;
+local Jekyll collections preserve this site's existing publication URLs.
+{% endcomment %}
+{% assign papers = site.publications | where: 'featured', true | sort: 'display_order' %}
+<div class="publications">
+<ol class="bibliography publication-list">
+{% for link in papers %}
+<li class="pub-row publication-row">
+  <div class="abbr publication-visual">
+    {% if link.image %}
+    <a class="publication-thumb" href="{{ link.url | relative_url }}" aria-label="View {{ link.project_name | escape }} and its method overview">
+      <img src="{{ link.image | relative_url }}" class="teaser" alt="{{ link.image_alt | escape }}" width="800" height="480" loading="lazy">
+      <span class="publication-thumb-caption"><span>{{ link.project_name }} · {{ link.figure_label }}</span><span>↗</span></span>
+    </a>
+    {% else %}
+    <div class="publication-text-only"><span>{{ link.display_year | upcase }}</span><strong>{{ link.project_name }}</strong><span>{{ link.status }}</span></div>
+    {% endif %}
+  </div>
+  <div class="publication-body">
+    <div class="periodical publication-meta"><span class="venue-label">{{ link.short_venue }}{% if link.status == 'Published' %} · {{ link.display_year }}{% endif %}</span><span class="status {% if link.status == 'Published' %}status-published{% endif %}">{{ link.status }}</span></div>
+    <h3 class="title"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></h3>
+    <p class="author paper-authors">{{ link.author_line }}</p>
+    <p class="paper-summary">{{ link.summary }}</p>
+    <div class="links paper-links"><a href="{{ link.url | relative_url }}">Overview ↗</a>{% if link.paperurl and link.paperurl != '' %}<a href="{{ link.paperurl }}" target="_blank" rel="noopener noreferrer">Paper ↗</a>{% endif %}{% if link.code %}<a href="{{ link.code }}" target="_blank" rel="noopener noreferrer">Code ↗</a>{% endif %}<span class="paper-topic">{{ link.topic }}</span></div>
+  </div>
+</li>
+{% endfor %}
+</ol>
+</div>

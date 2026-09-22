@@ -1,4 +1,18 @@
 ---
+image: /assets/academic/papers/mcts-track.png
+image_alt: "MCTS-Track overview: ambiguity-triggered local search and gated association refinement."
+figure_label: "Overview"
+figure_caption: "MCTS-Track: selective re-evaluation of ambiguous associations with a gated commit. Author-provided manuscript figure; work under review."
+layout: academic-detail
+featured: true
+display_order: 4
+display_year: "In review"
+short_venue: "CONFERENCE MANUSCRIPT"
+status: "Under review"
+project_name: "Ambiguity-aware tracking"
+author_line: "<strong>Haoyang Wu</strong> · First author"
+summary: "Selective, bounded local search refines ambiguous object associations to preserve identities in near-online multi-object tracking."
+topic: "MULTI-OBJECT TRACKING"
 title: "One conference paper under review on ambiguity-aware multi-object tracking"
 collection: publications
 category: conferences

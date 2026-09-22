@@ -1,4 +1,8 @@
 ---
+layout: academic-detail
+course_name: "Object-Oriented Programming (C++)"
+teaching_role: "Teaching assistant"
+summary: "Undergraduate lab instruction on C++ programming, object-oriented design, and practical debugging."
 title: "Teaching Assistant – Object-Oriented Programming (C++)"
 collection: teaching
 type: "Undergraduate Course Assistant"

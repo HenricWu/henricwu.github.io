@@ -1,12 +1,12 @@
 ---
-layout: archive
+layout: academic
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+description: "Teaching experience of Haoyang Wu at Shanghai Maritime University and Southwest Petroleum University."
 ---
-
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<section class="wrap listing-page teaching-page">
+  <div class="page-intro"><p class="eyebrow">ACADEMIC LIFE / TEACHING</p><h1>Sharing what I learn<span class="blue">.</span></h1><p>Connecting computer science foundations with applied visual intelligence.</p></div>
+  {% for course in site.teaching reversed %}
+  <article class="teaching-row"><div class="teaching-date">{{ course.date | date: '%Y' }}<span>FALL SEMESTER</span></div><div><p class="eyebrow">{{ course.teaching_role }}</p><h2><a href="{{ course.url | relative_url }}">{% if course.course_name %}{{ course.course_name }}{% else %}{{ course.title }}{% endif %}</a></h2><p>{{ course.venue }}</p><p class="teaching-description">{{ course.summary }}</p><a class="text-link" href="{{ course.url | relative_url }}">Course & responsibilities <span aria-hidden="true">↗</span></a></div></article>
+  {% endfor %}
+</section>

@@ -1,4 +1,20 @@
 ---
+image: /assets/academic/papers/opti3d.png
+image_alt: "Overview of the Opti3D framework from the published IEEE Access paper."
+figure_label: "Fig. 1"
+figure_caption: "Overview of the Opti3D framework from the published IEEE Access paper."
+figure_license: "CC BY 4.0"
+figure_license_url: "https://creativecommons.org/licenses/by/4.0/"
+layout: academic-detail
+featured: true
+display_order: 1
+display_year: "2026"
+short_venue: "IEEE ACCESS"
+status: "Published"
+project_name: "Opti3D"
+author_line: "Huihui Liu, <strong>Haoyang Wu</strong> · Corresponding author"
+summary: "A training-free framework that retrieves compact, query-relevant visual evidence from 3D scenes for efficient multimodal reasoning."
+topic: "3D SCENE UNDERSTANDING"
 title: "Query-Driven Evidence Retrieval for Efficient 3D Question Answering"
 collection: publications
 category: manuscripts
@@ -7,7 +23,7 @@ excerpt: 'This paper presents Opti3D, a training-free and plug-and-play visual a
 date: 2026-08-04
 venue: 'IEEE Access'
 slidesurl: ''
-paperurl: '10.1109/ACCESS.2026.3720265'
+paperurl: 'https://doi.org/10.1109/ACCESS.2026.3720265'
 bibtexurl: ''
 citation: 'Huihui Liu and <b>Haoyang Wu</b>. (2026). "Query-Driven Evidence Retrieval for Efficient 3D Question Answering." <i>IEEE Access</i>.'
 ---
