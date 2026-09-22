@@ -40,6 +40,4 @@ The site remains compatible with the repository's existing GitHub Pages build. N
 
 The biography and paper statuses come from the existing homepage and repository. Two published method figures were extracted from the final IEEE papers and matched to their DOI and captions. MCTS-Track uses an author manuscript figure and remains marked under review. No experimental results were regenerated or independently validated for this redesign.
 
-The vessel-delay manuscript has no verified matching figure available in the inspected sources. Its card is intentionally typographic rather than displaying a fabricated figure. The abstract and status have not been embellished.
-
 The publishing branch is `master`. The pre-redesign version is preserved at `backup/pre-redesign-2026-09-22`; all updates remain reversible through Git history.
