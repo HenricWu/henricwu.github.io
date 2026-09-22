@@ -7,27 +7,29 @@ layout: academic-detail
 featured: true
 display_order: 4
 display_year: "In review"
-short_venue: "CONFERENCE MANUSCRIPT"
+short_venue: "MANUSCRIPT"
 status: "Under review"
-project_name: "Ambiguity-aware tracking"
+project_name: "MCTS-Track"
 author_line: "<strong>Haoyang Wu</strong> · First author"
-summary: "Selective, bounded local search refines ambiguous object associations to preserve identities in near-online multi-object tracking."
+summary: "Selective Monte Carlo planning explores ambiguous association decisions through a tracker's native state transitions, with conservative fallback to its original decision."
 topic: "MULTI-OBJECT TRACKING"
-title: "One conference paper under review on ambiguity-aware multi-object tracking"
+title: "MCTS-Track: Monte Carlo Tree Search over Native Association Decisions for Multi-Object Tracking"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/2026-mcts-track-under-review
-excerpt: 'A conference paper under review on ambiguity-aware association refinement for near-online multi-object tracking.'
+excerpt: 'Selective Monte Carlo planning over native association decisions for multi-object tracking. Manuscript under review.'
 date: 2026-03-23
-venue: 'Conference paper under review'
+venue: 'Manuscript under review'
 slidesurl: ''
 paperurl: ''
 bibtexurl: ''
-citation: 'One conference paper under review on ambiguity-aware multi-object tracking, 2026.'
+citation: 'MCTS-Track: Monte Carlo Tree Search over Native Association Decisions for Multi-Object Tracking. Manuscript under review, 2026.'
 ---
 
-This manuscript studies ambiguity-aware local association refinement for near-online multi-object tracking. The method selectively activates bounded local search in ambiguity-critical regions to improve identity preservation while maintaining the efficiency of tracking-by-detection systems.
+MCTS-Track studies how to refine ambiguous association decisions before they propagate through a multi-object tracker's state. It formulates association as Monte Carlo planning over each host tracker's legal actions, cloneable local state, and native transitions.
+
+The shared planner activates on ambiguous local components, allocates simulations adaptively, and compares alternative current-frame associations through short-horizon replay. It commits only the selected root action and retains the host's reference decision when acceptance checks fail.
 
 **Status**: Under review.
 
-**Keywords**: Multi-Object Tracking; Data Association; Monte Carlo Tree Search; Identity Preservation; Near-Online Tracking.
+**Keywords**: Multi-Object Tracking; Data Association; Monte Carlo Tree Search; Identity Preservation; Selective Planning.

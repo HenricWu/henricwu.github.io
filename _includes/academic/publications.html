@@ -22,7 +22,7 @@ local Jekyll collections preserve this site's existing publication URLs.
   <div class="publication-body">
     <div class="periodical publication-meta"><span class="venue-label">{{ link.short_venue }}{% if link.status == 'Published' %} · {{ link.display_year }}{% endif %}</span><span class="status {% if link.status == 'Published' %}status-published{% endif %}">{{ link.status }}</span></div>
     <h3 class="title"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></h3>
-    <p class="author paper-authors">{{ link.author_line }}</p>
+    {% if link.author_line %}<p class="author paper-authors">{{ link.author_line }}</p>{% endif %}
     <p class="paper-summary">{{ link.summary }}</p>
     <div class="links paper-links"><a href="{{ link.url | relative_url }}">Overview ↗</a>{% if link.paperurl and link.paperurl != '' %}<a href="{{ link.paperurl }}" target="_blank" rel="noopener noreferrer">Paper ↗</a>{% endif %}{% if link.code %}<a href="{{ link.code }}" target="_blank" rel="noopener noreferrer">Code ↗</a>{% endif %}<span class="paper-topic">{{ link.topic }}</span></div>
   </div>
