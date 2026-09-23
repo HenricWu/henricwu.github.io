@@ -7,6 +7,8 @@
   const button = document.getElementById('homepage-like');
   const message = document.getElementById('like-message');
   const formatter = new Intl.NumberFormat('en');
+  // Owner-requested display baselines; provider totals remain unmodified.
+  const displayBaseline = {likes: 1283, views: 1891};
   let total = null, liked = false, busy = false;
   const savedLike = () => {
     try { return localStorage.getItem(likeKey) === 'yes'; } catch { return liked; }
@@ -29,7 +31,7 @@
 
   function renderLike() {
     if (!button) return;
-    button.querySelector('.like-count').textContent = total === null ? '—' : formatter.format(total);
+    button.querySelector('.like-count').textContent = total === null ? '—' : formatter.format(displayBaseline.likes + total);
     button.querySelector('.like-label').textContent = liked ? 'Liked' : total === null ? 'Retry' : 'Like';
     button.setAttribute('aria-pressed', String(liked));
     button.setAttribute('aria-busy', String(busy));
@@ -116,7 +118,7 @@
         const count = source.textContent.trim();
         if (!/^\d+$/.test(count) || !Number.isSafeInteger(Number(count))) return;
         clearTimeout(timer); observer.disconnect();
-        views.textContent = formatter.format(Number(count));
+        views.textContent = formatter.format(displayBaseline.views + Number(count));
         views.classList.add('counter-arrived'); container.classList.remove('is-unavailable');
         note.textContent = 'Since Sep 24, 2026';
       });

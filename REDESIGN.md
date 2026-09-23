@@ -54,6 +54,8 @@ The footer uses [Busuanzi](https://busuanzi.ibruce.info/)'s official script and 
 
 Additional motion includes the rotating photo border, staggered diagram scans, click ripples, confirmed-like heart particles and subtle label/status pulses. Visible photo/diagram loops pause offscreen and in hidden tabs; reduced-motion settings disable decorative animation. The existing five-photo carousel and four-paper selection are preserved.
 
+At the owner's request, displayed counts include fixed starting values of 1,283 likes and 1,891 homepage views. These are presentation baselines, not measured historical interactions. Each displayed number is its baseline plus the corresponding live provider total. Provider data is unchanged; successful likes still add exactly one, and service failures still show `—`. Baselines are configured in `assets/academic/engagement.js`.
+
 ## Appearance
 
 The top-right appearance control offers Auto / Light / Dark on every redesigned page. Auto is the default and follows the visitor's local clock: light from 07:00 (inclusive) to 19:00 (exclusive), dark overnight. It rechecks once a minute and whenever the tab becomes visible. Explicit choices are saved in browser storage and synchronized across tabs; blocked storage still permits changes for the current page. `theme.js` runs before styles for the correct initial paint, and subsequent changes fade naturally unless reduced motion is requested. Paper figures retain their original white backgrounds for readability. Without JavaScript the site remains readable in the default light appearance.
