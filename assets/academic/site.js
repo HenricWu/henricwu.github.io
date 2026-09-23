@@ -18,6 +18,21 @@
 })();
 
 (() => {
+  const diagrams = [...document.querySelectorAll('.research-diagram')];
+  if (!diagrams.length || !('IntersectionObserver' in window)) return;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const visible = new Set();
+  const sync = () => diagrams.forEach(diagram => diagram.classList.toggle('is-animating', visible.has(diagram) && !reduced.matches && !document.hidden));
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target));
+    sync();
+  }, {threshold: .25});
+  diagrams.forEach(diagram => observer.observe(diagram));
+  reduced.addEventListener('change', sync);
+  document.addEventListener('visibilitychange', sync);
+})();
+
+(() => {
   const gallery = document.querySelector('.photo-gallery');
   if (!gallery) return;
   const track = gallery.querySelector('.photo-track');

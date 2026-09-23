@@ -22,3 +22,12 @@ h1,h2,h3,h4{overflow-wrap:break-word}.hero-copy,.publication-body,.about-content
 .photo-dots button[aria-current=true]:after{background:var(--blue);width:16px;border-radius:4px}
 .photo-controls .photo-play{font-size:.65rem;min-width:40px;border-left:1px solid var(--line);margin-left:4px;padding-left:12px}
 @media print{.photo-controls{display:none!important}}
+.diagram-flow{fill:none;stroke:#e1e9ff;stroke-width:3;stroke-linecap:round;stroke-dasharray:16 310;stroke-dashoffset:326;opacity:0;animation:research-flow 4.5s linear infinite;animation-play-state:paused}
+.diagram-flow.flow-secondary{animation-delay:-1.5s;stroke:#91b9ff}
+.diagram-flow.flow-delayed{animation-delay:-3s}
+.diagram-pulse{fill:none;stroke:#c8d8ff;stroke-width:1.5;transform-box:fill-box;transform-origin:center;opacity:0;animation:research-pulse 3s ease-out infinite;animation-play-state:paused}
+.research-diagram.is-animating .diagram-flow,.research-diagram.is-animating .diagram-pulse{animation-play-state:running}
+@keyframes research-flow{0%{stroke-dashoffset:326;opacity:0}8%{opacity:1}88%{opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes research-pulse{0%{transform:scale(.45);opacity:0}20%{opacity:.8}100%{transform:scale(1.65);opacity:0}}
+@media(prefers-reduced-motion:reduce){.diagram-flow,.diagram-pulse{display:none}}
+@media print{.diagram-flow,.diagram-pulse{display:none}}
