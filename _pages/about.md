@@ -23,7 +23,6 @@ redirect_from:
         <img src="{{ '/images/Google参会照.PNG' | relative_url }}" alt="Haoyang Wu at Google I/O Connect" width="1080" height="1080" fetchpriority="high" style="--photo-position:76% 50%">
         <img src="{{ '/assets/academic/photos/wuhan-open.jpg' | relative_url }}" alt="At the Wuhan Open snooker venue" width="1707" height="1280" loading="lazy" style="--photo-position:72% 50%">
         <img src="{{ '/assets/academic/photos/ai-conference.jpg' | relative_url }}" alt="At the 2025 Jiangsu AI Innovation and Development Conference" width="1707" height="1280" loading="lazy" style="--photo-position:72% 50%">
-        <img src="{{ '/assets/academic/photos/everyday.jpg' | relative_url }}" alt="An everyday moment outside research" width="1280" height="1700" loading="lazy" style="--photo-position:65% 10%">
         <img src="{{ '/assets/academic/photos/white-polo-portrait.jpg' | relative_url }}" alt="Portrait in a white polo shirt" width="864" height="1184" loading="lazy" style="--photo-position:50% 0%">
         <img src="{{ '/assets/academic/photos/station-portrait.jpg' | relative_url }}" alt="Portrait on a train station platform" width="960" height="1282" loading="lazy" style="--photo-position:50% 40%">
       </div>
@@ -35,7 +34,6 @@ redirect_from:
           <button type="button" aria-label="Show photo 3" aria-current="false"></button>
           <button type="button" aria-label="Show photo 4" aria-current="false"></button>
           <button type="button" aria-label="Show photo 5" aria-current="false"></button>
-          <button type="button" aria-label="Show photo 6" aria-current="false"></button>
         </div>
         <button type="button" class="photo-next" aria-label="Next photo">→</button>
         <button type="button" class="photo-play" aria-label="Pause photo slideshow">Pause</button>
