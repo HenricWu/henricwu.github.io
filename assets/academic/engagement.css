@@ -1,0 +1,50 @@
+.hero h1{margin-bottom:8px}
+.hero-name-zh{font-family:'Kaiti SC','STKaiti','KaiTi','Songti SC',serif;font-size:1.8rem;font-weight:500;letter-spacing:.25em;color:#536784;line-height:1.55;margin-bottom:24px}
+.profile-links{align-items:center;flex-wrap:wrap;row-gap:12px}
+.like-button{position:relative;display:inline-flex;align-items:center;gap:7px;min-height:34px;border:1px solid #d6dfed;border-radius:30px;background:#fff9;padding:5px 11px;color:#657188;cursor:pointer;font-size:.75rem;line-height:1.4;transition:color .25s,background .25s,border-color .25s,transform .25s,box-shadow .25s;margin-left:3px}
+.like-button svg{width:15px;height:15px;overflow:visible;fill:transparent;stroke:currentColor;stroke-width:1.6;transition:fill .3s,transform .3s}
+.like-button:not(:disabled):hover{color:#da507d;border-color:#f1b8cb;box-shadow:0 4px 18px #df4d7520;transform:translateY(-2px)}
+.like-button:not(:disabled):hover svg{transform:scale(1.13)}
+.like-button[aria-pressed=true]{background:#fff0f5;color:#cc4774;border-color:#efb9cc}
+.like-button[aria-pressed=true] svg{fill:currentColor}
+.like-button:disabled{cursor:default}
+.like-button[aria-busy=true]{opacity:.65}
+.like-count{font-variant-numeric:tabular-nums;min-width:1ch}
+.engagement-message{min-height:1.25em;margin-top:5px;font-size:.65rem;color:var(--muted);max-width:390px}
+.like-button.is-celebrating svg{animation:heart-pop .65s ease}
+.like-spark{position:absolute;left:50%;top:50%;width:5px;height:5px;border-radius:50%;background:var(--spark-color,#eb759d);pointer-events:none;animation:like-spark .8s cubic-bezier(.15,.65,.3,1) forwards}
+@keyframes heart-pop{0%,100%{transform:scale(1)}35%{transform:scale(1.45)}65%{transform:scale(.9)}}
+@keyframes like-spark{from{transform:translate(-50%,-50%) scale(1);opacity:1}to{transform:translate(var(--spark-x),var(--spark-y)) scale(.15);opacity:0}}
+.site-footer .visitor-counter{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:9px;width:100%;padding-top:20px;margin-top:5px;border-top:1px solid var(--line);color:var(--muted);font-size:.7rem;font-family:var(--sans);line-height:1.8}
+.visitor-counter strong{font-weight:600;color:var(--ink);font-size:.85rem;min-width:1ch;font-variant-numeric:tabular-nums}
+.visitor-note{font-size:.62rem;color:#8893a1;margin-left:8px}
+.visitor-indicator{width:6px;height:6px;background:#7294d8;border-radius:50%;box-shadow:0 0 0 4px #789ce012;animation:visitor-pulse 3s ease-in-out infinite}
+@keyframes visitor-pulse{50%{box-shadow:0 0 0 7px #789ce000}}
+.visitor-counter.is-unavailable .visitor-indicator{background:#99a2ae;animation:none}
+.visitor-counter.is-unavailable strong{color:var(--muted)}
+.counter-arrived{animation:counter-arrived .6s ease both}
+@keyframes counter-arrived{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+/* A moving border and a passing scan line add a visible, gentle pulse. */
+@property --frame-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
+.portrait-frame{border:2px solid transparent;padding:9px;background:linear-gradient(#fff,#fff) padding-box,conic-gradient(from var(--frame-angle),#dce4f2 0%,#c6d7ff 28%,#668be8 36%,#d1c4ed 45%,#dce4f2 58%,#dce4f2 100%) border-box;animation:frame-orbit 9s linear infinite;animation-play-state:paused}
+.portrait-frame.frame-visible{animation-play-state:running}
+@keyframes frame-orbit{to{--frame-angle:360deg}}
+.research-item{position:relative;isolation:isolate}
+.research-item:after{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,#afc5ff,transparent);transform:scaleX(0);opacity:0;transition:transform .55s,opacity .55s}
+.research-item:hover:after{transform:scaleX(.9);opacity:.75}
+.research-diagram.is-animating .diagram-flow{filter:drop-shadow(0 0 4px #91aaff)}
+.research-diagram{position:relative;overflow:hidden}
+.research-diagram:after{content:'';position:absolute;inset:0 auto 0 0;width:20%;border-right:1px solid #a8c3ff66;background:linear-gradient(90deg,transparent,#9ab8ff0c);pointer-events:none;opacity:0;animation:diagram-scan 6s ease-in-out infinite;animation-play-state:paused}
+.research-diagram.is-animating:after{animation-play-state:running}
+.research-item:nth-child(2) .research-diagram:after{animation-delay:-2s}
+.research-item:nth-child(3) .research-diagram:after{animation-delay:-4s}
+@keyframes diagram-scan{0%{transform:translateX(-110%);opacity:0}15%,65%{opacity:1}85%,100%{transform:translateX(600%);opacity:0}}
+.ui-ripple{position:absolute;border-radius:50%;pointer-events:none;background:#aabfff45;width:12px;height:12px;transform:translate(-50%,-50%);animation:ui-ripple .65s ease-out forwards}
+@keyframes ui-ripple{to{transform:translate(-50%,-50%) scale(22);opacity:0}}
+.button,.nav-contact,.photo-controls button{position:relative;overflow:hidden}
+.section-heading .eyebrow,.section-label>span{position:relative}
+.section-heading .eyebrow:after,.section-label>span:after{content:'';display:inline-block;vertical-align:middle;width:26px;height:1px;margin-left:13px;background:linear-gradient(90deg,var(--blue),transparent);transform-origin:left;animation:label-breathe 4s ease-in-out infinite}
+@keyframes label-breathe{50%{transform:scaleX(1.8);opacity:.4}}
+@media(max-width:640px){.hero-name-zh{font-size:1.5rem;margin-bottom:22px}.like-button{margin-left:0}.visitor-note{width:100%;margin-left:0;text-align:center}.site-footer .visitor-counter{padding-top:16px;gap:7px}.engagement-message{font-size:.6rem}}
+@media(prefers-reduced-motion:reduce){.like-spark,.ui-ripple,.research-diagram:after{display:none}.portrait-frame,.visitor-indicator,.counter-arrived,.like-button.is-celebrating svg,.section-heading .eyebrow:after,.section-label>span:after{animation:none!important}.research-diagram .diagram-flow{filter:none}}
+@media print{.like-button,.engagement-message,.visitor-counter{display:none!important}}

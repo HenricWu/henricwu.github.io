@@ -12,10 +12,12 @@ redirect_from:
   <div class="hero-copy">
     <p class="eyebrow hero-eyebrow"><span class="small-rule"></span> Ph.D. student · HUST</p>
     <h1 id="hero-title">Haoyang Wu<span class="blue">.</span></h1>
+    <p class="hero-name-zh" lang="zh-CN">吴昊阳</p>
     <p class="hero-statement">Towards continuous<br><em>visual intelligence.</em></p>
     <p class="hero-description">I study how machines track, remember, and reason about a changing world — with a focus on multi-object tracking, persistent perception, and multimodal reasoning.</p>
     <div class="hero-actions"><a class="button button-primary" href="#publications">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:haoyangwu@hust.edu.cn">Let's connect <span aria-hidden="true">↗</span></a></div>
-    <div class="profile-links" aria-label="Academic profiles"><a href="https://github.com/HenricWu" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span aria-hidden="true">/</span><a href="https://orcid.org/0009-0009-5828-7183" target="_blank" rel="noopener noreferrer">ORCID ↗</a><span aria-hidden="true">/</span><a href="mailto:haoyangwu@hust.edu.cn">Email ↗</a></div>
+    <div class="profile-links" aria-label="Academic profiles"><a href="https://github.com/HenricWu" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span aria-hidden="true">/</span><a href="https://orcid.org/0009-0009-5828-7183" target="_blank" rel="noopener noreferrer">ORCID ↗</a><span aria-hidden="true">/</span><a href="mailto:haoyangwu@hust.edu.cn">Email ↗</a><button class="like-button" id="homepage-like" type="button" aria-label="Like this homepage" aria-pressed="false" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><span class="like-label">Like</span><span class="like-count" aria-label="Total likes">—</span></button></div>
+    <p class="engagement-message" id="like-message" role="status" aria-live="polite"></p>
   </div>
   <figure class="portrait-block">
     <div class="portrait-frame photo-gallery" role="region" aria-roledescription="carousel" aria-label="Photo album">

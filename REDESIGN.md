@@ -41,3 +41,13 @@ The site remains compatible with the repository's existing GitHub Pages build. N
 The biography and paper statuses come from the existing homepage and repository. Two published method figures were extracted from the final IEEE papers and matched to their DOI and captions. MCTS-Track uses an author manuscript figure and remains marked under review. No experimental results were regenerated or independently validated for this redesign.
 
 The publishing branch is `master`. The pre-redesign version is preserved at `backup/pre-redesign-2026-09-22`; all updates remain reversible through Git history.
+
+## Homepage engagement (2026-09-24)
+
+The separate Chinese name below the English name follows the typographic hierarchy of https://zheng-kai.com/; no personal content or code was copied.
+
+`assets/academic/engagement.js` adds a shared like count using the public Applause API at `https://applause.chabouis.fr`, the replacement service recommended by [applause-button](https://github.com/ColinEberhardt/applause-button). The small heart component is a custom implementation of its documented GET/POST protocol. All homepage URL variations use `https://henricwu.github.io/` as their key. Only confirmed server responses update the count. A local browser flag and Web Locks prevent ordinary repeat likes in the same browser; this is not account-based voting or fraud prevention. Clearing storage or using another browser removes that local restriction. A network failure never generates a fake increment or automatically retries a write.
+
+The footer uses [Busuanzi](https://busuanzi.ibruce.info/)'s official script and `site_pv`. The script runs once per homepage load on the production hostname only, grouping homepage query/hash variants into the same total. Inner pages and local previews do not increment visits. This counts page loads, including repeat visits and checks, rather than unique people; ad blockers, disabled JavaScript or service outages can prevent a visit from being recorded. Counts depend on these third-party public services, and `—` indicates unavailable data. No credentials or private keys are embedded. The counters do not reconstruct historical visits before integration.
+
+Additional motion includes the rotating photo border, staggered diagram scans, click ripples, confirmed-like heart particles and subtle label/status pulses. Visible photo/diagram loops pause offscreen and in hidden tabs; reduced-motion settings disable decorative animation. The existing five-photo carousel and four-paper selection are preserved.
