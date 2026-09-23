@@ -1,4 +1,13 @@
-/* Self-hosted Google Fonts. SIL Open Font License; see fonts/ licenses. */
+/* Self-hosted fonts. SIL Open Font License; see fonts/ licenses. */
+/* Source Han Serif SC Medium 2.003, subset to 吴昊阳 and renamed per OFL. */
+@font-face {
+  font-family: 'Haoyang Name Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/haoyang-name-serif.woff2) format('woff2');
+  unicode-range: U+5434, U+660A, U+9633;
+}
 @font-face {
   font-family: 'DM Sans';
   font-style: normal;

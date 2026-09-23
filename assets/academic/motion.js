@@ -123,7 +123,7 @@
   const drawScene = (scene, now) => {
     const {ctx, width, height, dark, pointer} = scene;
     ctx.clearRect(0, 0, width, height);
-    const color = dark ? '139,174,255' : '62,101,209';
+    const color = dark || document.documentElement.dataset.theme === 'dark' ? '139,174,255' : '62,101,209';
     const t = now * .00022;
     const nodes = scene.nodes.slice(0, width < 600 ? 16 : undefined).map(node => ({
       x: node.x * width + Math.sin(t + node.phase) * 22 + (pointer.x - .5) * 20,

@@ -1,5 +1,6 @@
 .hero h1{margin-bottom:8px}
-.hero-name-zh{font-family:'Kaiti SC','STKaiti','KaiTi','Songti SC',serif;font-size:1.8rem;font-weight:500;letter-spacing:.25em;color:#536784;line-height:1.55;margin-bottom:24px}
+.hero-statement{font-family:var(--serif);letter-spacing:-.025em}
+.hero-name-zh{font-family:'Haoyang Name Serif','Source Han Serif SC','Songti SC',serif;font-size:1.8rem;font-weight:500;letter-spacing:.25em;color:#536784;line-height:1.55;margin-bottom:24px}
 .profile-links{align-items:center;flex-wrap:wrap;row-gap:12px}
 .like-button{position:relative;display:inline-flex;align-items:center;gap:7px;min-height:34px;border:1px solid #d6dfed;border-radius:30px;background:#fff9;padding:5px 11px;color:#657188;cursor:pointer;font-size:.75rem;line-height:1.4;transition:color .25s,background .25s,border-color .25s,transform .25s,box-shadow .25s;margin-left:3px}
 .like-button svg{width:15px;height:15px;overflow:visible;fill:transparent;stroke:currentColor;stroke-width:1.6;transition:fill .3s,transform .3s}
