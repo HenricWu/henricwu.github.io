@@ -1,5 +1,8 @@
 ---
 image: /assets/academic/papers/ambicorrect.png
+image_width: 1770
+image_height: 816
+thumbnail_crop: {x: 15, y: 11, width: 1734, height: 799}
 image_alt: "AmbiCorrect overview: cross-view evidence favors an alternative target, while a typed graph, ambiguity memory, and revision policy separate evidence from action."
 figure_label: "Fig. 1"
 figure_caption: "Query-conditioned identity misalignment: local evidence supports the wrong target, while evidence across views supports an alternative. AmbiCorrect separates evidence accumulation from the decision to revise an identity. Figure from the author-provided manuscript; work under review."

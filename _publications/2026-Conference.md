@@ -1,5 +1,8 @@
 ---
 image: /assets/academic/papers/mcts-track.png
+image_width: 1941
+image_height: 1092
+thumbnail_crop: {x: 47, y: 24, width: 1855, height: 1044}
 image_alt: "MCTS-Track overview: ambiguity-triggered local search and gated association refinement."
 figure_label: "Overview"
 figure_caption: "MCTS-Track: selective re-evaluation of ambiguous associations with a gated commit. Author-provided manuscript figure; work under review."

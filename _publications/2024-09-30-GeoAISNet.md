@@ -1,5 +1,8 @@
 ---
 image: /assets/academic/papers/geoaisnet.png
+image_width: 1235
+image_height: 1155
+thumbnail_crop: {x: 3, y: 2, width: 1229, height: 1148}
 image_alt: "Remote sensing image and AIS data fusion workflow from the published IEEE J-STARS paper."
 figure_label: "Fig. 2"
 figure_caption: "Remote sensing image and AIS data fusion workflow from the published IEEE J-STARS paper."

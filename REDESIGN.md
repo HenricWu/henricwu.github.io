@@ -21,6 +21,7 @@ The publication component adapts `_includes/publications.md` from minimal-light 
 - Add `featured: true` and `display_order` to include a paper in the redesigned lists.
 - Paper metadata: `short_venue`, `display_year`, `status`, `author_line`, `summary`, `topic`, `project_name`.
 - Paper images: `image`, `image_alt`, `figure_label`, `figure_caption`, and attribution fields for published figures.
+- Preview framing: `image_width` / `image_height` store the original pixel dimensions; `thumbnail_crop` specifies the content rectangle as `x`, `y`, `width`, `height`. The publication lists display this rectangle at its natural aspect ratio with no added padding. These CSS display crops only remove outer blank margins; original image files and detail-page figures remain intact. Desktop image columns can expand to 300px for clearer diagrams.
 - Paper links: `paperurl` (full URL), optional `code`; existing overview permalinks remain unchanged.
 - Teaching: `_teaching/`, with `course_name`, `teaching_role`, and `summary`.
 - Shared design: `_layouts/academic.html`, `_layouts/academic-detail.html`, `assets/academic/style.css` and `site.js`.

@@ -1,5 +1,8 @@
 ---
 image: /assets/academic/papers/opti3d.png
+image_width: 1262
+image_height: 670
+thumbnail_crop: {x: 12, y: 10, width: 1240, height: 654}
 image_alt: "Overview of the Opti3D framework from the published IEEE Access paper."
 figure_label: "Fig. 1"
 figure_caption: "Overview of the Opti3D framework from the published IEEE Access paper."

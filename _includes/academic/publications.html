@@ -11,8 +11,16 @@ local Jekyll collections preserve this site's existing publication URLs.
 <li class="pub-row publication-row">
   <div class="abbr publication-visual">
     {% if link.image %}
+    {% assign source_width = link.image_width | default: 800 %}
+    {% assign source_height = link.image_height | default: 480 %}
+    {% assign crop_width = link.thumbnail_crop.width | default: source_width %}
+    {% assign crop_height = link.thumbnail_crop.height | default: source_height %}
+    {% assign crop_x = link.thumbnail_crop.x | default: 0 %}
+    {% assign crop_y = link.thumbnail_crop.y | default: 0 %}
     <a class="publication-thumb" href="{{ link.url | relative_url }}" aria-label="View {{ link.project_name | escape }} and its method overview">
-      <img src="{{ link.image | relative_url }}" class="teaser" alt="{{ link.image_alt | escape }}" width="800" height="480" loading="lazy">
+      <span class="publication-image" style="--paper-aspect:{{ crop_width }} / {{ crop_height }};--paper-width:{{ source_width | times: 100.0 | divided_by: crop_width }}%;--paper-left:{{ crop_x | times: -100.0 | divided_by: crop_width }}%;--paper-top:{{ crop_y | times: -100.0 | divided_by: crop_height }}%">
+        <img src="{{ link.image | relative_url }}" class="teaser" alt="{{ link.image_alt | escape }}" width="{{ source_width }}" height="{{ source_height }}" loading="lazy" decoding="async">
+      </span>
       <span class="publication-thumb-caption"><span>{{ link.project_name }} · {{ link.figure_label }}</span><span>↗</span></span>
     </a>
     {% else %}
