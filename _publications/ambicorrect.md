@@ -13,7 +13,7 @@ display_year: "In review"
 short_venue: "MANUSCRIPT"
 status: "Under review"
 project_name: "AmbiCorrect"
-author_line: "<a href=\"https://openreview.net/profile?id=~Haoyang_Wu8\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Haoyang Wu</strong></a>, <a href=\"https://openreview.net/profile?id=~Shoudong_Han1\" target=\"_blank\" rel=\"noopener noreferrer\">Shoudong Han</a>, <a href=\"https://openreview.net/profile?id=~Chaoyue_Li3\" target=\"_blank\" rel=\"noopener noreferrer\">Chaoyue Li</a>, <a href=\"https://openreview.net/profile?id=~Sijia_Chen4\" target=\"_blank\" rel=\"noopener noreferrer\">Sijia Chen</a>, <a href=\"https://openreview.net/profile?id=~Wenbo_Zheng3\" target=\"_blank\" rel=\"noopener noreferrer\">Wenbo Zheng</a>, <a href=\"https://openreview.net/profile?id=~Heng_Li30\" target=\"_blank\" rel=\"noopener noreferrer\">Heng Li</a>, <a href=\"https://openreview.net/profile?id=~Zhenhao_Zhang3\" target=\"_blank\" rel=\"noopener noreferrer\">Zhenhao Zhang</a>, <a href=\"https://openreview.net/profile?id=~Zhenyang_Xie3\" target=\"_blank\" rel=\"noopener noreferrer\">Zhenyang Xie</a>"
+author_line: "<strong>Haoyang Wu</strong>, Shoudong Han, Chaoyue Li, Sijia Chen, Wenbo Zheng, Heng Li, Zhenhao Zhang, Zhenyang Xie"
 summary: "Cross-view evidence and persistent ambiguity memory guide selective identity revision for language-specified targets, with decisions to keep, replace, defer, or restore an assignment."
 topic: "CROSS-VIEW REFERRING TRACKING"
 title: "AmbiCorrect: Selective Query-Conditioned Identity Revision for Cross-View Referring Multi-Object Tracking"
@@ -22,9 +22,7 @@ category: manuscripts
 permalink: /publication/ambicorrect
 excerpt: 'Selective query-conditioned identity revision through cross-view evidence, relational reasoning, and persistent ambiguity memory. Manuscript under review.'
 venue: 'Manuscript under review'
-paperurl: "https://openreview.net/forum?noteId=Lla3x3SE3b"
-paper_label: "OpenReview"
-paper_action_label: "View on OpenReview"
+paperurl: ''
 ---
 
 AmbiCorrect addresses identity mistakes in cross-view referring multi-object tracking, where a language description may be supported only by observations distributed across several cameras. A locally plausible tracklet can be assigned to the query before later views reveal a better-supported candidate.

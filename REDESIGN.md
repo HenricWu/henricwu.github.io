@@ -66,3 +66,7 @@ The top-right appearance control offers Auto / Light / Dark on every redesigned 
 The selection now contains five works. ReWorld-Track is a public arXiv preprint (2609.36677, v1, 2026-09-29), with the title and author order copied from its public abstract page. Its unchanged Fig. 2 SVG comes from https://arxiv.org/html/2609.36677v1/fig2_overview.svg under CC BY 4.0. The overview distinguishes illustrative bars/curves from experimental results. Links point to the abstract, PDF, and HTML. No code release is asserted.
 
 MCTS-Track and AmbiCorrect list the full author order and OpenReview profile/paper URLs supplied by the owner; both remain Under review without a conference name. Opti3D credits Haoyang Wu as co-first and corresponding author, as clarified by the owner. Both existing IEEE DOI links were matched to the paper titles in Crossref. OpenReview automated access presented a verification challenge; its supplied URLs are retained without a claim of independently verified public access.
+
+At the owner's subsequent request on 2026-10-04, the OpenReview paper and profile links for MCTS-Track and AmbiCorrect were removed while review is ongoing. Full author lists remain as plain text, with Haoyang Wu emphasized, and both statuses remain Under review.
+
+ReWorld-Track author capitalization was corrected to Wang Sihan at the owner's request, in both the byline and citation.

@@ -7,7 +7,7 @@ short_venue: "arXiv"
 status: "Preprint"
 project_name: "ReWorld-Track"
 title: "ReWorld-Track: A Recursive Event World Model for Language-Guided Multi-Camera Tracking"
-author_line: "<strong>Haoyang Wu</strong>, Shoudong Han, Chaoyue Li, Sijia Chen, Zhenyang Xie, Wang sihan"
+author_line: "<strong>Haoyang Wu</strong>, Shoudong Han, Chaoyue Li, Sijia Chen, Zhenyang Xie, Wang Sihan"
 summary: "A recursive event world model carries identity uncertainty across blind camera gaps, coupling language-guided association with forecasts of the next camera, arrival time, and entry region."
 topic: "LANGUAGE-GUIDED MULTI-CAMERA TRACKING"
 collection: publications
@@ -30,7 +30,7 @@ figure_caption: "Prediction guides candidate-or-null association; the resulting 
 figure_source_label: "Source: arXiv preprint"
 figure_license: "CC BY 4.0"
 figure_license_url: "https://creativecommons.org/licenses/by/4.0/"
-citation: 'Haoyang Wu, Shoudong Han, Chaoyue Li, Sijia Chen, Zhenyang Xie, and Wang sihan. (2026). “ReWorld-Track: A Recursive Event World Model for Language-Guided Multi-Camera Tracking.” <i>arXiv:2609.36677</i>.'
+citation: 'Haoyang Wu, Shoudong Han, Chaoyue Li, Sijia Chen, Zhenyang Xie, and Wang Sihan. (2026). “ReWorld-Track: A Recursive Event World Model for Language-Guided Multi-Camera Tracking.” <i>arXiv:2609.36677</i>.'
 ---
 
 ReWorld-Track studies language-guided tracking across multiple cameras when a target disappears into a blind gap before becoming visible again. Instead of committing immediately to a single identity, the method maintains uncertainty over plausible candidates and continued waiting.

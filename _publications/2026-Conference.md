@@ -13,7 +13,7 @@ display_year: "In review"
 short_venue: "MANUSCRIPT"
 status: "Under review"
 project_name: "MCTS-Track"
-author_line: "<a href=\"https://openreview.net/profile?id=~Haoyang_Wu8\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Haoyang Wu</strong></a>, <a href=\"https://openreview.net/profile?id=~Shoudong_Han1\" target=\"_blank\" rel=\"noopener noreferrer\">Shoudong Han</a>, <a href=\"https://openreview.net/profile?id=~Chaoyue_Li3\" target=\"_blank\" rel=\"noopener noreferrer\">Chaoyue Li</a>, <a href=\"https://openreview.net/profile?id=~Heng_Li30\" target=\"_blank\" rel=\"noopener noreferrer\">Heng Li</a>, <a href=\"https://openreview.net/profile?id=~Sijia_Chen4\" target=\"_blank\" rel=\"noopener noreferrer\">Sijia Chen</a>, <a href=\"https://openreview.net/profile?id=~Zhenyang_Xie3\" target=\"_blank\" rel=\"noopener noreferrer\">Zhenyang Xie</a>"
+author_line: "<strong>Haoyang Wu</strong>, Shoudong Han, Chaoyue Li, Heng Li, Sijia Chen, Zhenyang Xie"
 summary: "Selective Monte Carlo planning explores ambiguous association decisions through a tracker's native state transitions, with conservative fallback to its original decision."
 topic: "MULTI-OBJECT TRACKING"
 title: "MCTS-Track: Monte Carlo Tree Search over Native Association Decisions for Multi-Object Tracking"
@@ -24,9 +24,7 @@ excerpt: 'Selective Monte Carlo planning over native association decisions for m
 date: 2026-03-23
 venue: 'Manuscript under review'
 slidesurl: ''
-paperurl: "https://openreview.net/forum?noteId=Zg8UckGP5v"
-paper_label: "OpenReview"
-paper_action_label: "View on OpenReview"
+paperurl: ''
 bibtexurl: ''
 citation: 'MCTS-Track: Monte Carlo Tree Search over Native Association Decisions for Multi-Object Tracking. Manuscript under review, 2026.'
 ---
