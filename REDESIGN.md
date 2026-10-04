@@ -22,7 +22,7 @@ The publication component adapts `_includes/publications.md` from minimal-light 
 - Paper metadata: `short_venue`, `display_year`, `status`, `author_line`, `summary`, `topic`, `project_name`.
 - Paper images: `image`, `image_alt`, `figure_label`, `figure_caption`, and attribution fields for published figures.
 - Preview framing: `image_width` / `image_height` store the original pixel dimensions; `thumbnail_crop` specifies the content rectangle as `x`, `y`, `width`, `height`. The publication lists display this rectangle at its natural aspect ratio with no added padding. These CSS display crops only remove outer blank margins; original image files and detail-page figures remain intact. Desktop image columns can expand to 300px for clearer diagrams.
-- Paper links: `paperurl` (full URL), optional `code`; existing overview permalinks remain unchanged.
+- Paper links: `paperurl` (full URL), optional `paper_label` / `paper_action_label`, `pdfurl`, `htmlurl`, and `code`; existing overview permalinks remain unchanged.
 - Teaching: `_teaching/`, with `course_name`, `teaching_role`, and `summary`.
 - Shared design: `_layouts/academic.html`, `_layouts/academic-detail.html`, `assets/academic/style.css` and `site.js`.
 
@@ -60,3 +60,9 @@ At the owner's request, displayed counts include fixed starting values of 1,283 
 ## Appearance
 
 The top-right appearance control offers Auto / Light / Dark on every redesigned page. Auto is the default and follows the visitor's local clock: light from 07:00 (inclusive) to 19:00 (exclusive), dark overnight. It rechecks once a minute and whenever the tab becomes visible. Explicit choices are saved in browser storage and synchronized across tabs; blocked storage still permits changes for the current page. `theme.js` runs before styles for the correct initial paint, and subsequent changes fade naturally unless reduced motion is requested. Paper figures retain their original white backgrounds for readability. Without JavaScript the site remains readable in the default light appearance.
+
+## Publication update (2026-10-04)
+
+The selection now contains five works. ReWorld-Track is a public arXiv preprint (2609.36677, v1, 2026-09-29), with the title and author order copied from its public abstract page. Its unchanged Fig. 2 SVG comes from https://arxiv.org/html/2609.36677v1/fig2_overview.svg under CC BY 4.0. The overview distinguishes illustrative bars/curves from experimental results. Links point to the abstract, PDF, and HTML. No code release is asserted.
+
+MCTS-Track and AmbiCorrect list the full author order and OpenReview profile/paper URLs supplied by the owner; both remain Under review without a conference name. Opti3D credits Haoyang Wu as co-first and corresponding author, as clarified by the owner. Both existing IEEE DOI links were matched to the paper titles in Crossref. OpenReview automated access presented a verification challenge; its supplied URLs are retained without a claim of independently verified public access.

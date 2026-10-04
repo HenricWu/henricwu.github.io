@@ -15,7 +15,7 @@ display_year: "2026"
 short_venue: "IEEE ACCESS"
 status: "Published"
 project_name: "Opti3D"
-author_line: "Huihui Liu, <strong>Haoyang Wu</strong> · Corresponding author"
+author_line: "Huihui Liu, <strong>Haoyang Wu</strong> · Co-first &amp; corresponding author"
 summary: "A training-free framework that retrieves compact, query-relevant visual evidence from 3D scenes for efficient multimodal reasoning."
 topic: "3D SCENE UNDERSTANDING"
 title: "Query-Driven Evidence Retrieval for Efficient 3D Question Answering"
@@ -41,7 +41,7 @@ Experiments on ScanQA and SQA3D demonstrate that Opti3D improves 3D QA performan
 
 **Status**: Published.
 
-**Role**: Second author and corresponding author.
+**Role**: Co-first author and corresponding author.
 
 **Publisher**: IEEE Access.
 

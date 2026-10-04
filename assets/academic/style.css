@@ -37,3 +37,6 @@ h1,h2,h3,h4{overflow-wrap:break-word}.hero-copy,.publication-body,.about-content
 .publication-thumb .publication-image img{position:absolute;left:var(--paper-left,0%);top:var(--paper-top,0%);width:var(--paper-width,100%);height:auto;max-width:none;padding:0;object-fit:fill}
 .publication-thumb:hover .publication-image img{transform:none}
 @media(min-width:641px){.publication-row{grid-template-columns:clamp(220px,28vw,300px) minmax(0,1fr)}}
+
+/* Linked author bylines and optional public-paper resources. */
+.paper-authors a,.detail-byline a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}.paper-authors a:hover,.detail-byline a:hover{text-decoration-color:currentColor}.detail-paper-links{display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px;margin-top:22px}.paper-links{flex-wrap:wrap}
