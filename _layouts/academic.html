@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="{{ '/assets/academic/theme.css' | relative_url }}">
   <script src="{{ '/assets/academic/site.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/academic/motion.js' | relative_url }}?v=appearance-20260924" defer></script>
-  {% if page.home %}<script src="{{ '/assets/academic/engagement.js' | relative_url }}?v=counters-20260924" defer></script>{% endif %}
+  {% if page.home %}<script src="{{ '/assets/academic/engagement.js' | relative_url }}?v=views-20261005" defer></script>{% endif %}
 </head>
 <body class="{% if page.home %}home{% else %}inner-page{% endif %}">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -47,7 +47,7 @@
     <p>Computer vision · Continuous visual intelligence</p>
     <span>© {{ site.time | date: '%Y' }} Haoyang Wu</span>
     <a href="#main" class="back-top">Back to top ↑</a>
-    {% if page.home %}<div class="visitor-counter" aria-label="Homepage views"><span class="visitor-indicator" aria-hidden="true"></span><span>Homepage views</span><strong id="homepage-views" aria-live="polite">—</strong><span class="visitor-note" id="visitor-note">Since Sep 24, 2026</span><noscript>Enable JavaScript to see the count.</noscript></div>{% endif %}
+    {% if page.home %}<div class="visitor-counter" aria-label="Homepage views"><span class="visitor-indicator" aria-hidden="true"></span><span>Homepage views</span><strong id="homepage-views" aria-live="polite">—</strong><span class="visitor-note" id="visitor-note">Loading…</span><noscript>Enable JavaScript to see the count.</noscript></div>{% endif %}
   </footer>
 </body>
 </html>

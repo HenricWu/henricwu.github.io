@@ -70,3 +70,9 @@ MCTS-Track and AmbiCorrect list the full author order and OpenReview profile/pap
 At the owner's subsequent request on 2026-10-04, the OpenReview paper and profile links for MCTS-Track and AmbiCorrect were removed while review is ongoing. Full author lists remain as plain text, with Haoyang Wu emphasized, and both statuses remain Under review.
 
 ReWorld-Track author capitalization was corrected to Wang Sihan at the owner's request, in both the byline and citation.
+
+## Visit counter recovery (2026-10-05)
+
+The original Busuanzi JSONP endpoint returned HTTP 502 HTML and timed out; Chrome blocked its response with ERR_BLOCKED_BY_ORB. Homepage views now use Vercount's public JSON API at https://events.vercount.one/api/v2/log, following the request contract in its official https://events.vercount.one/js client and https://www.vercount.one/ documentation. There is exactly one request per production homepage load, no automatic retry, and no request on inner pages or local previews. The canonical homepage URL groups query/hash variants. Only page views are used; isNewUv is false and no visitor cookie is introduced. Existing owner-requested display baselines are unchanged. Vercount documents legacy Busuanzi synchronization, but complete historical migration has not been independently verified.
+
+A successful, validated provider total is cached in this browser. During a later outage it remains visible with a dated Last recorded label; a first visit without a saved total shows no invented count. Storage failures do not prevent live results. API errors, malformed/non-integer/negative/unsafe counts, and timeouts cannot replace a saved total. Likes are unchanged.

@@ -109,29 +109,50 @@
     const note = document.getElementById('visitor-note');
     const container = views.closest('.visitor-counter');
     if (published) {
-      // Load once, on the homepage only. site_pv groups query/hash variations.
-      const source = document.createElement('span');
-      source.id = 'busuanzi_value_site_pv'; source.hidden = true; source.setAttribute('aria-hidden', 'true');
-      container.append(source);
-      let timer;
-      const observer = new MutationObserver(() => {
-        const count = source.textContent.trim();
-        if (!/^\d+$/.test(count) || !Number.isSafeInteger(Number(count))) return;
-        clearTimeout(timer); observer.disconnect();
-        views.textContent = formatter.format(displayBaseline.views + Number(count));
-        views.classList.add('counter-arrived'); container.classList.remove('is-unavailable');
-        note.textContent = 'Since Sep 24, 2026';
-      });
-      observer.observe(source, {childList: true, characterData: true, subtree: true});
-      const unavailable = () => {
-        clearTimeout(timer); container.classList.add('is-unavailable');
-        note.textContent = 'Temporarily unavailable';
-      };
-      timer = setTimeout(unavailable, 15000);
-      const script = document.createElement('script');
-      script.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
-      script.async = true; script.referrerPolicy = 'no-referrer-when-downgrade'; script.onerror = unavailable;
-      document.head.append(script);
+      const cacheKey = 'henricwu-homepage-views-vercount-v1';
+      const validCount = count => Number.isSafeInteger(count) && count >= 0 &&
+        Number.isSafeInteger(displayBaseline.views + count);
+      let saved = null;
+      try {
+        const value = JSON.parse(localStorage.getItem(cacheKey));
+        if (value && validCount(value.count) && Number.isFinite(value.updatedAt) &&
+            value.updatedAt > 0 && value.updatedAt <= Date.now()) saved = value;
+      } catch { /* Storage is optional; live counting still works. */ }
+      const renderViews = count => { views.textContent = formatter.format(displayBaseline.views + count); };
+      if (saved) renderViews(saved.count);
+      note.textContent = saved ? 'Updating…' : 'Loading…';
+
+      async function loadViews() {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 12000);
+        try {
+          // One visit per homepage load, using a canonical URL for all query/hash variants.
+          // Only page views are displayed; no unique-visitor cookie is needed.
+          const response = await fetch('https://events.vercount.one/api/v2/log', {
+            method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({url: homepage, isNewUv: false}),
+            signal: controller.signal, cache: 'no-store', credentials: 'omit'
+          });
+          if (!response.ok) throw new Error('Counter unavailable');
+          const body = await response.json();
+          if (body.status === 'error') throw new Error('Counter unavailable');
+          const count = (body.data || body).site_pv;
+          if (!validCount(count)) throw new Error('Invalid count');
+          renderViews(count);
+          views.classList.add('counter-arrived');
+          container.classList.remove('is-unavailable');
+          note.textContent = 'Page loads';
+          try { localStorage.setItem(cacheKey, JSON.stringify({count, updatedAt: Date.now()})); }
+          catch { /* A blocked cache must not hide a successful response. */ }
+        } catch {
+          container.classList.add('is-unavailable');
+          note.textContent = saved
+            ? `Last recorded · ${new Intl.DateTimeFormat('en', {month: 'short', day: 'numeric', year: 'numeric'}).format(saved.updatedAt)}`
+            : 'Counter service unavailable';
+          // Never invent an increment or retry a possibly recorded visit automatically.
+        } finally { clearTimeout(timer); }
+      }
+      loadViews();
     } else {
       container.classList.add('is-unavailable');
       note.textContent = 'Live on the published homepage';
