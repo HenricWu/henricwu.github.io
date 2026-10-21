@@ -1,0 +1,10 @@
+{% assign figure_paper = include.paper %}
+{% assign source_width = figure_paper.image_width | default: 800 %}
+{% assign source_height = figure_paper.image_height | default: 480 %}
+{% assign crop_width = figure_paper.thumbnail_crop.width | default: source_width %}
+{% assign crop_height = figure_paper.thumbnail_crop.height | default: source_height %}
+{% assign crop_x = figure_paper.thumbnail_crop.x | default: 0 %}
+{% assign crop_y = figure_paper.thumbnail_crop.y | default: 0 %}
+<span class="publication-image" style="--paper-aspect:{{ crop_width }} / {{ crop_height }};--paper-width:{{ source_width | times: 100.0 | divided_by: crop_width }}%;--paper-left:{{ crop_x | times: -100.0 | divided_by: crop_width }}%;--paper-top:{{ crop_y | times: -100.0 | divided_by: crop_height }}%;--reel-image-width:{{ crop_width | times: 156.0 | divided_by: crop_height }}px">
+  <img src="{{ figure_paper.image | relative_url }}" class="teaser" alt="{{ figure_paper.image_alt | escape }}" width="{{ source_width }}" height="{{ source_height }}" loading="lazy" decoding="async">
+</span>

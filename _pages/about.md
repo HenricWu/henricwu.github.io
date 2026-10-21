@@ -62,7 +62,7 @@ redirect_from:
 </section>
 <section class="section wrap publications-section" id="publications" aria-labelledby="publications-title">
   <div class="section-heading"><div><p class="eyebrow">03 / PUBLICATIONS</p><h2 id="publications-title">Research in print<span class="blue">.</span></h2></div><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a></div>
-  {% include academic/publications.html %}
+  {% include academic/publication-browser.html %}
 </section>
 <section class="section wrap experience-section" id="experience" aria-labelledby="experience-title">
   <div class="section-label"><span>04 / EXPERIENCE</span><h2 id="experience-title">Learning.<br>Building.<br><em>Applying.</em></h2><p>From maritime perception<br>to continuous intelligence.</p></div>

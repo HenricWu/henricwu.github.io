@@ -1,0 +1,25 @@
+{% assign reel_papers = site.publications | where: 'featured', true | sort: 'display_order' %}
+<div class="publication-browser">
+  <div class="paper-reel-shell">
+    <div class="paper-reel-toolbar"><p><span class="reel-live-dot" aria-hidden="true"></span> A closer look <span class="reel-hint">· Select a paper to explore</span></p><button type="button" class="paper-reel-play" aria-pressed="false" hidden>Pause motion</button></div>
+    <div class="paper-reel" tabindex="0" role="region" aria-label="Paper previews. Scroll horizontally to browse.">
+      <div class="paper-reel-track">
+        <div class="paper-reel-group">
+          {% for paper in reel_papers %}
+          <a class="paper-reel-card" href="{{ paper.url | relative_url }}" data-paper-target="home-paper-{{ paper.project_name | slugify }}" aria-label="Explore {{ paper.project_name }}: {{ paper.title | escape }}">
+            <div class="paper-reel-figure">{% if paper.image %}{% include academic/paper-image.html paper=paper %}{% else %}<span class="paper-reel-placeholder">{{ paper.project_name }}</span>{% endif %}</div>
+            <div class="paper-reel-caption"><div><strong>{{ paper.project_name }}</strong><span>{{ paper.short_venue }} · {{ paper.status }}</span></div><span class="paper-reel-arrow" aria-hidden="true">↗</span></div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <details class="publication-disclosure" id="publication-details">
+    <summary><span class="publication-toggle-label"><span class="when-closed">Explore papers</span><span class="when-open">Collapse papers</span></span><span class="publication-count">{{ reel_papers.size }} papers</span><span class="publication-chevron" aria-hidden="true">↓</span></summary>
+    <div class="publication-expanded">
+      {% include academic/publications.html id_prefix='home-paper-' %}
+      <button type="button" class="publication-collapse" hidden>Collapse papers <span aria-hidden="true">↑</span></button>
+    </div>
+  </details>
+</div>
