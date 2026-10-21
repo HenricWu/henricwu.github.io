@@ -14,7 +14,7 @@ short_venue: "MANUSCRIPT"
 status: "Under review"
 project_name: "AmbiCorrect"
 author_line: "<strong>Haoyang Wu</strong>, Shoudong Han, Chaoyue Li, Sijia Chen, Wenbo Zheng, Heng Li, Zhenhao Zhang, Zhenyang Xie"
-summary: "Cross-view evidence and persistent ambiguity memory guide selective identity revision for language-specified targets, with decisions to keep, replace, defer, or restore an assignment."
+summary: "AmbiCorrect revises query-to-tracklet assignments when evidence from later camera views challenges an initially plausible match. A typed graph compares candidates, while persistent ambiguity memory carries unresolved evidence across observation windows. A separate revision policy decides whether to keep, replace, abstain, or roll back an assignment, leaving the host tracker’s detections and geometric tracklets unchanged."
 topic: "CROSS-VIEW REFERRING TRACKING"
 title: "AmbiCorrect: Selective Query-Conditioned Identity Revision for Cross-View Referring Multi-Object Tracking"
 collection: publications

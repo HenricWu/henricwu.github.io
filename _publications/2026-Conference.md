@@ -14,7 +14,7 @@ short_venue: "MANUSCRIPT"
 status: "Under review"
 project_name: "MCTS-Track"
 author_line: "<strong>Haoyang Wu</strong>, Shoudong Han, Chaoyue Li, Heng Li, Sijia Chen, Zhenyang Xie"
-summary: "Selective Monte Carlo planning explores ambiguous association decisions through a tracker's native state transitions, with conservative fallback to its original decision."
+summary: "MCTS-Track revisits ambiguous association decisions before they propagate through a multi-object tracker's state. A selective Monte Carlo planner explores legal alternatives through the host tracker's native state transitions, using adaptive simulations and short-horizon replay to compare their consequences. Only the selected current-frame action is committed; when acceptance checks fail, the tracker retains its original decision."
 topic: "MULTI-OBJECT TRACKING"
 title: "MCTS-Track: Monte Carlo Tree Search over Native Association Decisions for Multi-Object Tracking"
 collection: publications

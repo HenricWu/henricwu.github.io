@@ -16,7 +16,7 @@ short_venue: "IEEE ACCESS"
 status: "Published"
 project_name: "Opti3D"
 author_line: "Huihui Liu, <strong>Haoyang Wu</strong> · Co-first &amp; corresponding author"
-summary: "A training-free framework that retrieves compact, query-relevant visual evidence from 3D scenes for efficient multimodal reasoning."
+summary: "Opti3D retrieves compact visual evidence for 3D question answering without additional training. It combines a global bird's-eye view with query-relevant local views, using instruction-guided detection and 3D ray-based instance merging to remove repeated observations across views. The resulting visual prompt preserves scene layout and relevant object details while reducing redundant input to a vision-language model."
 topic: "3D SCENE UNDERSTANDING"
 title: "Query-Driven Evidence Retrieval for Efficient 3D Question Answering"
 collection: publications

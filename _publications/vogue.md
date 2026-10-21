@@ -13,7 +13,7 @@ short_venue: "PATTERN RECOGNITION"
 status: "Accepted"
 project_name: "VOGUE"
 author_line: "Yuhao Wei, Shoudong Han, Wenbo Zheng, <strong>Haoyang Wu</strong>"
-summary: "Online graph tracking combines virtual long-term memory with sequence-adaptive association to reconnect lost identities after occlusion."
+summary: "VOGUE addresses identity continuity when targets disappear behind occlusions in online multi-object tracking. It combines a sliding-window graph of recent observations with virtual memory nodes that retain lost identities beyond the active window. A sequence-adaptive policy adjusts association thresholds, cue weights, and reconnection budgets, allowing unresolved detections to query long-term memory before starting new tracks."
 topic: "MULTI-OBJECT TRACKING"
 title: "VOGUE: Sequence-adaptive online graph tracking with virtual long-term memory"
 collection: publications

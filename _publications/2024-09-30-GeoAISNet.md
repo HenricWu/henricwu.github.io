@@ -16,7 +16,7 @@ short_venue: "IEEE J-STARS"
 status: "Published"
 project_name: "GeoAISNet"
 author_line: "<strong>Haoyang Wu</strong>, Zishuo Huang, Qinyou Hu, Xin Ran, Qiang Mei"
-summary: "Combining AIS vessel data with satellite imagery to correct maritime geolocation errors without relying on ground control points."
+summary: "GeoAISNet combines AIS vessel data with low-orbit satellite imagery to correct maritime geolocation errors without ground control points. A modified YOLOv8 detector incorporates vessel orientation and attention to identify ships in remote sensing images. AIS position information then provides a reference for correcting image-based locations, supporting maritime monitoring where reliable ground references are unavailable."
 topic: "REMOTE SENSING"
 title: "AIS Data-Guided Geolocation Correction Method for Low-Orbit Satellite Remote Sensing Imagery"
 collection: publications
