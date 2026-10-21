@@ -1,7 +1,7 @@
 {% assign reel_papers = site.publications | where: 'featured', true | sort: 'display_order' %}
 <div class="publication-browser">
   <div class="paper-reel-shell">
-    <div class="paper-reel-toolbar"><p><span class="reel-live-dot" aria-hidden="true"></span> A closer look <span class="reel-hint">· Select a paper to explore</span></p><button type="button" class="paper-reel-play" aria-pressed="false" hidden>Pause motion</button></div>
+    <div class="paper-reel-toolbar"><p><span class="reel-live-dot" aria-hidden="true"></span> A closer look <span class="reel-hint">· Select a paper to explore</span></p><button type="button" class="paper-reel-play" aria-pressed="false" hidden><span class="paper-motion-icon" aria-hidden="true"><svg class="motion-pause" viewBox="0 0 24 24"><path d="M7 5h4v14H7zM14 5h4v14h-4z"/></svg><svg class="motion-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"/></svg></span><span class="paper-motion-label">Pause motion</span></button></div>
     <div class="paper-reel" tabindex="0" role="region" aria-label="Paper previews. Scroll horizontally to browse.">
       <div class="paper-reel-track">
         <div class="paper-reel-group">

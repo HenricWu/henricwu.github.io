@@ -38,3 +38,14 @@
 @media(max-width:640px){.paper-reel-card{width:268px;flex-basis:268px}.paper-reel-track,.paper-reel-group{gap:14px}.reel-hint{display:none}.paper-reel-toolbar{font-size:.7rem}.paper-reel-caption div>span{font-size:.55rem}.publication-disclosure>summary{padding-block:17px}.paper-reel-shell{padding-bottom:12px}}
 @media(prefers-reduced-motion:reduce){.paper-reel-card,.publication-chevron{transition:none}}
 @media print{.paper-reel-shell,.publication-disclosure>summary,.publication-collapse{display:none!important}.publication-disclosure>.publication-expanded{display:block!important}.publication-disclosure{border:0}}
+
+/* Keep the motion control visible, with a large icon and matching action text. */
+.paper-reel-play{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:5px 14px 5px 6px;border-color:var(--blue);color:var(--ink);font-weight:600;white-space:nowrap;background:var(--paper)}
+.paper-motion-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--blue);color:var(--paper);flex:none}
+.paper-motion-icon svg{width:20px;height:20px;fill:currentColor}
+.paper-motion-icon .motion-play,.paper-reel-play[aria-pressed="true"] .motion-pause{display:none}
+.paper-reel-play[aria-pressed="true"] .motion-play{display:block}
+.paper-reel-play:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.paper-reel-card.is-active{border-color:var(--blue);box-shadow:inset 0 -3px var(--blue)}
+.publication-expanded .publication-row[hidden]{display:none!important}
+@media print{.publication-expanded .publication-row[hidden]{display:grid!important}}

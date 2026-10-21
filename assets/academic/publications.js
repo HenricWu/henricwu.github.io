@@ -8,6 +8,8 @@
   const summary = disclosure.querySelector('summary');
   const play = browser.querySelector('.paper-reel-play');
   const collapse = browser.querySelector('.publication-collapse');
+  const rows = [...browser.querySelectorAll('.publication-row')];
+  const motionLabel = play.querySelector('.paper-motion-label');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let playing = !reduced.matches, visible = false, hovered = false;
   let frame = 0, lastTime = 0, position = 0, groupWidth = 0;
@@ -34,7 +36,7 @@
   };
   const sync = () => {
     cancelAnimationFrame(frame); frame = 0; lastTime = 0;
-    play.textContent = playing ? 'Pause motion' : 'Play motion';
+    motionLabel.textContent = playing ? 'Pause motion' : 'Play motion';
     play.setAttribute('aria-pressed', String(!playing));
     play.setAttribute('aria-label', playing ? 'Pause paper carousel' : 'Play paper carousel');
     if (canAnimate()) { position = reel.scrollLeft; frame = requestAnimationFrame(tick); }
@@ -48,7 +50,11 @@
     reel.scrollLeft = position;
     sync();
   };
-  play.addEventListener('click', () => { playing = !playing; sync(); });
+  play.addEventListener('click', () => {
+    playing = !playing;
+    if (playing) disclosure.open = false;
+    sync();
+  });
   reel.addEventListener('mouseenter', () => { hovered = true; sync(); });
   reel.addEventListener('mouseleave', () => { hovered = false; sync(); });
   reel.addEventListener('pointerdown', pause, {passive: true});
@@ -68,6 +74,14 @@
     selected?.classList.remove('is-selected');
     selected = target;
     selected.classList.add('is-selected', 'is-revealed');
+    rows.forEach(row => { row.hidden = row !== selected; });
+    const name = card.querySelector('strong').textContent;
+    summary.querySelector('.when-closed').textContent = `Explore ${name}`;
+    summary.querySelector('.when-open').textContent = `Collapse ${name}`;
+    collapse.firstChild.textContent = 'Collapse paper ';
+    browser.querySelectorAll('[data-paper-target]').forEach(link => {
+      link.classList.toggle('is-active', link.dataset.paperTarget === selected.id);
+    });
     disclosure.open = true;
     requestAnimationFrame(() => {
       target.querySelector('h3 a')?.focus({preventScroll: true});
