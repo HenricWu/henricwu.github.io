@@ -4,7 +4,7 @@ layout: academic
 <article class="detail-page wrap">
   {% if page.collection == 'publications' %}
   <a class="text-link" href="{{ '/publications/' | relative_url }}">← All publications</a>
-  <div class="detail-meta"><span class="eyebrow">{{ page.short_venue | default: page.venue }}</span>{% if page.status %}<span class="status {% if page.status == 'Published' %}status-published{% endif %}">{{ page.status }}</span>{% endif %}</div>
+  <div class="detail-meta"><span class="eyebrow">{{ page.short_venue | default: page.venue }}</span>{% if page.status %}<span class="status {% if page.status == 'Published' or page.status == 'Accepted' %}status-published{% endif %}">{{ page.status }}</span>{% endif %}</div>
   {% else %}
   <a class="text-link" href="{{ '/teaching/' | relative_url }}">← All teaching</a>
   <div class="detail-meta"><span class="eyebrow">{{ page.type }}</span><span>{{ page.date | date: '%Y' }}</span></div>

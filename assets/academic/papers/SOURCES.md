@@ -6,3 +6,10 @@
 - `ambicorrect.png`: *AmbiCorrect: Selective Query-Conditioned Identity Revision for Cross-View Referring Multi-Object Tracking*, author-provided manuscript. Fig. 1, PDF page 2. Complete figure region rendered without changing its content, for the author's academic homepage. Work under review; no publication acceptance or open-source license is implied.
 
 These research images are not covered by the template's software license. Published-figure captions and attribution links also appear on the individual article pages.
+
+## VOGUE
+
+- Figure: Fig. 2, architecture overview.
+- Source: author-provided revision manuscript, `Elsarticle (11)(1).pdf`, PDF page 8 (printed page 7), created 2026-08-16.
+- Asset: `vogue.png`, 1932 × 1029 px, rendered directly from the figure region with Poppler; surrounding page text and whitespace excluded, figure content unchanged.
+- Caption identifies the revision manuscript as the source; no publisher license or final published-figure claim is asserted.

@@ -1,4 +1,10 @@
 ---
+image: /assets/academic/papers/vogue.png
+image_width: 1932
+image_height: 1029
+image_alt: "VOGUE architecture with sliding-window graph construction, virtual long-term memory, a sequence-adaptive policy generator, and hierarchical association."
+figure_label: "Fig. 2"
+figure_caption: "VOGUE architecture, reproduced from the author-provided revision manuscript."
 layout: academic-detail
 featured: true
 display_order: 0
