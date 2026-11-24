@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ '/assets/academic/research-demos.css' | relative_url }}">
+<section class="wrap research-demos" id="research-demos" aria-labelledby="research-demos-title">
+  <h2 id="research-demos-title">Research demos<span class="blue">.</span></h2>
+  <div class="research-demo-grid">
+    {% for demo in site.data.research_demos %}
+    {% assign media = demo.id | prepend: '/assets/academic/demos/' %}
+    <article class="research-demo" id="{{ demo.id }}" aria-labelledby="{{ demo.id }}-title">
+      <p class="research-demo-topic">{{ demo.topic }}</p>
+      <h3 id="{{ demo.id }}-title">{{ demo.name }}<span>{{ demo.title }}</span></h3>
+      <p class="research-demo-summary">{{ demo.summary }}</p>
+      <figure>
+        <video controls playsinline preload="none" width="640" height="360"
+               poster="{{ media | append: '.jpg' | relative_url }}"
+               aria-label="{{ demo.name }} method illustration"
+               aria-describedby="{{ demo.id }}-description">
+          <source src="{{ media | append: '.mp4' | relative_url }}" type="video/mp4">
+          <a href="{{ media | append: '.mp4' | relative_url }}">Download the {{ demo.name }} demo</a>
+        </video>
+        <figcaption id="{{ demo.id }}-description">{{ demo.takeaway }}</figcaption>
+      </figure>
+    </article>
+    {% endfor %}
+  </div>
+</section>

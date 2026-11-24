@@ -60,6 +60,7 @@ redirect_from:
     <div class="research-outlook"><span>LOOKING AHEAD</span><p>Extending tracking-centered perception toward embodied intelligence and vision–language–action systems.</p><span aria-hidden="true">↗</span></div>
   </div>
 </section>
+{% include academic/research-demos.html %}
 <section class="section wrap publications-section" id="publications" aria-labelledby="publications-title">
   <div class="section-heading"><div><p class="eyebrow">03 / PUBLICATIONS</p><h2 id="publications-title">Research in print<span class="blue">.</span></h2></div><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a></div>
   {% include academic/publication-browser.html %}

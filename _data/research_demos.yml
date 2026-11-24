@@ -1,0 +1,18 @@
+- id: voxpivot
+  name: VoxPivot
+  topic: Audio-visual speech extraction
+  title: Choosing a camera to recover a target voice
+  summary: Swapping the interfering speaker can change which camera gives the best extraction. VoxPivot uses the observed audio and lip motion to choose a single view before its next frames arrive.
+  takeaway: The demo follows an audio mixture and the current view through a prefix-based selector to the chosen camera.
+- id: bindadapt
+  name: BindAdapt
+  topic: Active PTZ tracking
+  title: Keeping the right person in view
+  summary: A tracker can draw a confident box around the wrong person after a crossing. BindAdapt schedules camera motion, the verification operator, and its start time so the evidence arrives when it can still preserve the target identity.
+  takeaway: The demo shows how a verification result can return before the identity becomes ambiguous at a crossing.
+- id: coweave
+  name: CoWeave
+  topic: Multi-camera tracking
+  title: Carrying an identity across cameras
+  summary: People arriving together can share context that fits several identity assignments. CoWeave retrieves evidence that distinguishes the candidates and keeps memory ownership revisable when new evidence arrives.
+  takeaway: The demo illustrates two ambiguous arrivals, a targeted historical read, and a provisional identity assignment.
