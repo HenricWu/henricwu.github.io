@@ -2,14 +2,14 @@
 layout: academic-detail
 featured: true
 display_order: 8
-short_venue: RESEARCH PROJECT
-status: Demo available
+short_venue: "MANUSCRIPT"
+status: "Under review"
 project_name: CoWeave
 title: 'CoWeave: Identity-Specific Context Reasoning for Persistent Multi-Camera Tracking'
 summary: People arriving together can share context that fits several identity assignments. CoWeave retrieves evidence
   that distinguishes the candidates and keeps memory ownership revisable when new evidence arrives.
 topic: MULTI-CAMERA TRACKING
-venue: Multi-camera tracking
+venue: 'Manuscript under review'
 image: /assets/academic/papers/coweave-overview.webp
 image_width: 1536
 image_height: 663

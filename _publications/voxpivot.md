@@ -2,14 +2,14 @@
 layout: academic-detail
 featured: true
 display_order: 6
-short_venue: RESEARCH PROJECT
-status: Demo available
+short_venue: "MANUSCRIPT"
+status: "Under review"
 project_name: VoxPivot
 title: 'VoxPivot: Interference-Aware Camera Selection for Target Speech Extraction'
 summary: Swapping the interfering speaker can change which camera gives the best extraction. VoxPivot uses the observed
   audio and lip motion to choose a single view before its next frames arrive.
 topic: AUDIO-VISUAL SPEECH EXTRACTION
-venue: Audio-visual speech extraction
+venue: 'Manuscript under review'
 image: /assets/academic/papers/voxpivot-overview.webp
 image_width: 1536
 image_height: 594

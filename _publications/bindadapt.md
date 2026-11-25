@@ -2,15 +2,15 @@
 layout: academic-detail
 featured: true
 display_order: 7
-short_venue: RESEARCH PROJECT
-status: Demo available
+short_venue: "MANUSCRIPT"
+status: "Under review"
 project_name: BindAdapt
 title: 'BindAdapt: Joint Camera–Computation Scheduling for Persistent Target Identity in PTZ Tracking'
 summary: A tracker can draw a confident box around the wrong person after a crossing. BindAdapt schedules camera
   motion, the verification operator, and its start time so the evidence arrives when it can still preserve the target
   identity.
 topic: ACTIVE PTZ TRACKING
-venue: Active PTZ tracking
+venue: 'Manuscript under review'
 image: /assets/academic/papers/bindadapt-overview.webp
 image_width: 1536
 image_height: 556
