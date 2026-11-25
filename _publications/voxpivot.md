@@ -10,14 +10,14 @@ summary: Swapping the interfering speaker can change which camera gives the best
   audio and lip motion to choose a single view before its next frames arrive.
 topic: AUDIO-VISUAL SPEECH EXTRACTION
 venue: Audio-visual speech extraction
-image: /assets/academic/demos/voxpivot.jpg
-image_width: 640
-image_height: 360
-image_alt: A schematic diagram links the audio mixture and the current view to prefix-based selection between two
-  cameras.
-figure_label: Method illustration
-figure_caption: The demo follows an audio mixture and the current view through a prefix-based selector to the chosen
-  camera.
+image: /assets/academic/papers/voxpivot-overview.webp
+image_width: 1536
+image_height: 594
+image_alt: The VoxPivot pipeline connects the observed audio and held camera to the online view decision. Paired-view
+  replay provides training labels and offline scores.
+figure_label: Fig. 2
+figure_caption: Online camera selection from the observed prefix and offline paired-view replay for training labels
+  and evaluation. Example frames from MEAD.
 demo_url: /assets/academic/demos/voxpivot.mp4
 permalink: /publication/voxpivot
 ---

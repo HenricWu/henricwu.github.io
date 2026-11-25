@@ -11,13 +11,14 @@ summary: A tracker can draw a confident box around the wrong person after a cros
   identity.
 topic: ACTIVE PTZ TRACKING
 venue: Active PTZ tracking
-image: /assets/academic/demos/bindadapt.jpg
-image_width: 640
-image_height: 360
-image_alt: A timeline illustrates two crossing target trajectories, the start of verification, and the return of
-  identity evidence.
-figure_label: Method illustration
-figure_caption: The demo shows how a verification result can return before the identity becomes ambiguous at a crossing.
+image: /assets/academic/papers/bindadapt-overview.webp
+image_width: 1536
+image_height: 556
+image_alt: The BindAdapt overview shows source provenance, predictions of identity response, and joint scheduling
+  under compute and camera-motion budgets.
+figure_label: Fig. 2
+figure_caption: From shared cue provenance and predicted identity responses to joint camera and verification scheduling.
+  Example frames from DanceTrack.
 demo_url: /assets/academic/demos/bindadapt.mp4
 permalink: /publication/bindadapt
 ---

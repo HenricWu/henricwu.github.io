@@ -10,14 +10,14 @@ summary: People arriving together can share context that fits several identity a
   that distinguishes the candidates and keeps memory ownership revisable when new evidence arrives.
 topic: MULTI-CAMERA TRACKING
 venue: Multi-camera tracking
-image: /assets/academic/demos/coweave.jpg
-image_width: 640
-image_height: 360
-image_alt: A schematic compares two candidate identities across cameras and shows historical reads into identity
-  memory.
-figure_label: Method illustration
-figure_caption: The demo illustrates two ambiguous arrivals, a targeted historical read, and a provisional identity
-  assignment.
+image: /assets/academic/papers/coweave-overview.webp
+image_width: 1536
+image_height: 663
+image_alt: The CoWeave overview shows how an arrival is scored, how shared evidence is retrieved, and how memory
+  ownership is revised.
+figure_label: Fig. 2
+figure_caption: Identity-specific evidence, candidate decisions, shared retrieval, and memory revision at a cross-camera
+  arrival. Example frames from MTMMC.
 demo_url: /assets/academic/demos/coweave.mp4
 permalink: /publication/coweave
 ---
