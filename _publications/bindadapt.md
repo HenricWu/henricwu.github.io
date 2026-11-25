@@ -6,9 +6,10 @@ short_venue: "MANUSCRIPT"
 status: "Under review"
 project_name: BindAdapt
 title: 'BindAdapt: Joint Camera–Computation Scheduling for Persistent Target Identity in PTZ Tracking'
-summary: A tracker can draw a confident box around the wrong person after a crossing. BindAdapt schedules camera
-  motion, the verification operator, and its start time so the evidence arrives when it can still preserve the target
-  identity.
+summary: BindAdapt addresses identity switches when a PTZ tracker must act before verification results arrive. A
+  provenance graph tracks cues that share a source, and an identity-response model predicts when evidence will
+  return and how the tracker may assign identity. A receding-horizon scheduler jointly selects camera movements,
+  visual operators, and start times under motion and compute budgets.
 topic: ACTIVE PTZ TRACKING
 venue: 'Manuscript under review'
 image: /assets/academic/papers/bindadapt-overview.webp
